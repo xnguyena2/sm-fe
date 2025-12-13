@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f8fbff;
+            display: grid;
+            align-items: center;
+            place-items: center;
+            min-height: 100vh;
+        }
+
+        main {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0px 0px 30px 8px #e8e8e8;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        p {
+            max-width: 410px;
+        }
+
+        .form_input {
+
+            color: #333;
+            font-size: 1.2rem;
+            margin: 0 auto;
+            padding: .5rem 0.6rem;
+            border-radius: 0.3rem;
+            background-color: rgb(255, 255, 255);
+            border: none;
+            /* width: 90%; */
+            display: block;
+            border-bottom: 0.3rem solid transparent;
+            transition: all 0.3s;
+            outline: none;
+            border: 1.3px solid #797979;
+            margin-top: 10px;
+        }
+
+        .delete_btn {
+            outline: none;
+            background: red;
+            padding: 12px 72px;
+            border-radius: 8px;
+            border: none;
+            color: white;
+            font-size: 16px;
+            margin-top: 15px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xóa tài khoản?</title>
+</head>
+
+<body>
+    <main>
+        <h1>Xóa tài khoản!</h1>
+        <p>Chúng tôi sẽ xóa tài khoảng của bạn và toàn bộ dữ liệu liên quan đến tài khoảng sau khi nhận
+            được yêu cầu nếu trong 30 ngày(kể từ ngày bạn gửi yêu cầu) chúng tôi phát hiện bạn không còn
+            sử dụng ứng dụng!</p>
+        <input type="text" name="" id="userID" placeholder="Số điện thoại" class="form_input">
+        <input type="button" value="Xóa tài khoản" class="delete_btn" id="sendBtn">
+    </main>
+</body>
+
+<script>
+    const element = document.getElementById("sendBtn");
+    element.addEventListener("click", myFunction);
+
+    function myFunction() {
+        fetch('https://web-production-865f.up.railway.app/deleterequest/create', {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                "group_id": "trumbien_store",
+                "id": document.getElementById("userID").value
+            })
+        })
+            .then(response => response.json())
+            .then(response => {
+                console.log(JSON.stringify(response));
+                alert("Yêu cầu đã được gửi!!");
+            })
+    }
+</script>
+
+</html>
