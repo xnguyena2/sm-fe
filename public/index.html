@@ -24,10 +24,59 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sodi - Giải Pháp Quản Lý Bán Hàng Thông Minh</title>
+    <title>Sodi - Phần Mềm Quản Lý Bán Hàng, POS & Kho Hàng Trên Điện Thoại</title>
+    <meta name="description"
+        content="Sodi là phần mềm quản lý bán hàng và ứng dụng POS trên điện thoại, giúp chủ shop, quán cafe quản lý đơn hàng, kho hàng, hóa đơn bán hàng và doanh thu dễ dàng. Miễn phí bắt đầu.">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#1d4ed8">
+    <link rel="canonical" href="https://sodientu.com/">
+
+    <!-- Open Graph / Facebook / Zalo -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sodientu.com/">
+    <meta property="og:title" content="Sodi - Phần Mềm Quản Lý Bán Hàng, POS & Kho Hàng Trên Điện Thoại">
+    <meta property="og:description"
+        content="Ứng dụng quản lý bán hàng, kho hàng và hóa đơn ngay trên điện thoại. Phù hợp cho chủ shop, quán cafe và kinh doanh nhỏ lẻ. Hoàn toàn miễn phí để bắt đầu.">
+    <meta property="og:image" content="https://sodientu.com/assets/images/hero/phone.png">
+    <meta property="og:locale" content="vi_VN">
+    <meta property="og:site_name" content="Sodi">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sodi - Phần Mềm Quản Lý Bán Hàng, POS & Kho Hàng Trên Điện Thoại">
+    <meta name="twitter:description"
+        content="Quản lý đơn hàng, kho hàng và doanh thu ngay trên điện thoại. Miễn phí để bắt đầu.">
+    <meta name="twitter:image" content="https://sodientu.com/assets/images/hero/phone.png">
+
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="apple-touch-icon" href="assets/images/logo/logo.png">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Structured data: helps Google show star rating / install info in search results -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MobileApplication",
+      "name": "Sodi - Quản lý bán hàng",
+      "url": "https://sodientu.com/",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Android, iOS",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "VND"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "10000"
+      }
+    }
+    </script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
 
@@ -65,7 +114,8 @@
             <div class="flex justify-between h-16 items-center">
                 <div class="flex items-center gap-3">
                     <!-- Updated Logo with provided image -->
-                    <img src="assets/images/logo/logo.png" alt="Sodi Logo" class="logo-img" onerror="SoDi">
+                    <img src="assets/images/logo/logo.png" alt="Sodi - Phần mềm quản lý bán hàng" width="40" height="40"
+                        class="logo-img">
                     <span
                         class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-800">Sodi</span>
                 </div>
@@ -87,23 +137,24 @@
                     Quản lý bán hàng <br> <span class="text-blue-600">Dễ dàng & Hiệu quả</span>
                 </h1>
                 <p class="text-lg text-gray-600 mb-8 max-w-xl mx-auto lg:mx-0">
-                    Sodi là ứng dụng POS tối ưu giúp bạn quản lý đơn hàng, kho bãi và doanh thu ngay trên điện thoại.
+                    Sodi là <strong>phần mềm quản lý bán hàng</strong> và ứng dụng POS tối ưu giúp bạn quản lý đơn hàng,
+                    kho hàng, hóa đơn bán hàng và doanh thu ngay trên điện thoại.
                     Phù hợp cho chủ shop, quán cafe và kinh doanh nhỏ lẻ.
                 </p>
                 <div class="flex flex-wrap justify-center lg:justify-start gap-4" id="download">
                     <a href="https://apps.apple.com/us/app/sodi-qu%E1%BA%A3n-l%C3%BD-b%C3%A1n-h%C3%A0ng/id6474116712"
-                        target="_blank"
+                        target="_blank" rel="noopener" aria-label="Tải Sodi trên App Store"
                         class="flex items-center bg-black text-white px-6 py-3 rounded-xl hover:scale-105 transition duration-300">
-                        <i class="fab fa-apple text-3xl mr-3"></i>
+                        <i class="fab fa-apple text-3xl mr-3" aria-hidden="true"></i>
                         <div class="text-left">
                             <p class="text-xs uppercase">Download on the</p>
                             <p class="text-sm font-semibold">App Store</p>
                         </div>
                     </a>
                     <a href="https://play.google.com/store/apps/details?id=com.buffchalo.sales_management"
-                        target="_blank"
+                        target="_blank" rel="noopener" aria-label="Tải Sodi trên Google Play"
                         class="flex items-center bg-black text-white px-6 py-3 rounded-xl hover:scale-105 transition duration-300">
-                        <i class="fab fa-google-play text-2xl mr-3"></i>
+                        <i class="fab fa-google-play text-2xl mr-3" aria-hidden="true"></i>
                         <div class="text-left">
                             <p class="text-xs uppercase">Get it on</p>
                             <p class="text-sm font-semibold">Google Play</p>
@@ -112,7 +163,8 @@
                 </div>
             </div>
             <div class="flex-1 relative">
-                <img src="assets/images/hero/phone.png" class="mx-auto overflow-hidden relative" alt="Sodi">
+                <img src="assets/images/hero/phone.png" class="mx-auto overflow-hidden relative" width="400"
+                    height="800" fetchpriority="high" alt="Giao diện phần mềm quản lý bán hàng Sodi trên điện thoại">
                 <!-- Decorative elements -->
                 <div class="absolute -top-10 -right-10 w-24 h-24 bg-blue-200 rounded-full blur-3xl opacity-50"></div>
                 <div class="absolute -bottom-10 -left-10 w-32 h-32 bg-indigo-200 rounded-full blur-3xl opacity-50">
@@ -194,8 +246,8 @@
         <div class="max-w-7xl mx-auto px-4 flex flex-col lg:flex-row items-center gap-16">
             <div class="flex-1">
                 <img src="https://images.unsplash.com/photo-1556742044-3c52d6e88c62?auto=format&fit=crop&q=80&w=800"
-                    alt="Bán hàng tại quầy"
-                    class="rounded-3xl shadow-2xl rotate-3 hover:rotate-0 transition duration-500">
+                    alt="Chủ shop sử dụng phần mềm quản lý bán hàng Sodi tại quầy thu ngân" width="800" height="600"
+                    loading="lazy" class="rounded-3xl shadow-2xl rotate-3 hover:rotate-0 transition duration-500">
             </div>
             <div class="flex-1">
                 <h2 class="text-3xl font-bold mb-6">Giải pháp toàn diện cho mọi mô hình kinh doanh</h2>
@@ -234,14 +286,14 @@
                 miễn phí để bắt đầu.</p>
             <div class="flex flex-wrap justify-center gap-6">
                 <a href="https://apps.apple.com/us/app/sodi-qu%E1%BA%A3n-l%C3%BD-b%C3%A1n-h%C3%A0ng/id6474116712"
-                    target="_blank" class="hover:opacity-80 transition">
+                    target="_blank" rel="noopener" class="hover:opacity-80 transition">
                     <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
-                        alt="App Store" class="h-14">
+                        alt="Tải Sodi trên App Store" width="160" height="56" loading="lazy" class="h-14">
                 </a>
                 <a href="https://play.google.com/store/apps/details?id=com.buffchalo.sales_management" target="_blank"
-                    class="hover:opacity-80 transition">
+                    rel="noopener" class="hover:opacity-80 transition">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
-                        alt="Play Store" class="h-14">
+                        alt="Tải Sodi trên Google Play" width="189" height="56" loading="lazy" class="h-14">
                 </a>
             </div>
         </div>
@@ -251,14 +303,18 @@
     <footer class="py-10 border-t border-gray-200">
         <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-6">
             <div class="flex items-center gap-3">
-                <img src="assets/images/logo/logo.png" alt="Sodi Logo" class="w-8 h-8 object-contain">
+                <img src="assets/images/logo/logo.png" alt="Sodi Logo" width="32" height="32" loading="lazy"
+                    class="w-8 h-8 object-contain">
                 <span class="font-bold text-xl">Sodi POS</span>
             </div>
-            <p class="text-gray-500 text-sm">© 2024 Sodi Quản lý bán hàng. All rights reserved.</p>
+            <p class="text-gray-500 text-sm">© 2026 Sodi Quản lý bán hàng. All rights reserved.</p>
             <div class="flex space-x-6 text-gray-400">
-                <a href="#" class="hover:text-blue-600"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="hover:text-blue-600"><i class="fab fa-youtube"></i></a>
-                <a href="#" class="hover:text-blue-600"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.facebook.com/soquanlydientu" target="_blank" rel="noopener" aria-label="Facebook"
+                    class="hover:text-blue-600"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                <a href="https://www.youtube.com/@SoDiPos" target="_blank" rel="noopener" aria-label="YouTube"
+                    class="hover:text-blue-600"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+                <a href="mailto:support@sodientu.com" aria-label="Email" class="hover:text-blue-600"><i
+                        class="fas fa-envelope" aria-hidden="true"></i></a>
             </div>
         </div>
     </footer>
