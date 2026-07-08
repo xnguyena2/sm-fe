@@ -28,7 +28,7 @@
     <meta name="description"
         content="Sodi là phần mềm quản lý bán hàng và ứng dụng POS trên điện thoại, giúp chủ shop, quán cafe quản lý đơn hàng, kho hàng, hóa đơn bán hàng và doanh thu dễ dàng. Miễn phí bắt đầu.">
     <meta name="robots" content="index, follow">
-    <meta name="theme-color" content="#1d4ed8">
+    <meta name="theme-color" content="#0B1F2A">
     <link rel="canonical" href="https://sodientu.com/">
 
     <!-- Open Graph / Facebook / Zalo -->
@@ -54,7 +54,32 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        paper: '#FBF8F2',
+                        ink: '#16242B',
+                        pos: { DEFAULT: '#0E7C66', dark: '#0B5C4C' },
+                        stamp: '#C0392B',
+                        navy: '#0B1F2A',
+                        led: '#4AF7A0',
+                        line: '#D8D0C0',
+                    },
+                    fontFamily: {
+                        display: ['"Be Vietnam Pro"', 'sans-serif'],
+                        body: ['Inter', 'sans-serif'],
+                        mono: ['"IBM Plex Mono"', 'monospace'],
+                    },
+                },
+            },
+        };
+    </script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700;800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
 
     <!-- Structured data: helps Google show star rating / install info in search results -->
     <script type="application/ld+json">
@@ -65,37 +90,16 @@
       "url": "https://sodientu.com/",
       "applicationCategory": "BusinessApplication",
       "operatingSystem": "Android, iOS",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "VND"
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.8",
-        "ratingCount": "10000"
-      }
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "VND" },
+      "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "ratingCount": "10000" }
     }
     </script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
 
+    <style>
         body {
             font-family: 'Inter', sans-serif;
             scroll-behavior: smooth;
-        }
-
-        .gradient-bg {
-            background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
-        }
-
-        .app-shadow {
-            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
-        }
-
-        .feature-card:hover {
-            transform: translateY(-5px);
-            transition: all 0.3s ease;
+            background-color: #FBF8F2;
         }
 
         .logo-img {
@@ -103,187 +107,364 @@
             height: 40px;
             object-fit: contain;
         }
+
+        /* Perforated tear-off strip between paper sections */
+        .perforation {
+            height: 22px;
+            background-color: var(--line, #D8D0C0);
+            -webkit-mask-image: radial-gradient(circle, transparent 5px, black 5.5px);
+            mask-image: radial-gradient(circle, transparent 5px, black 5.5px);
+            -webkit-mask-size: 22px 22px;
+            mask-size: 22px 22px;
+            -webkit-mask-repeat: repeat-x;
+            mask-repeat: repeat-x;
+            -webkit-mask-position: center;
+            mask-position: center;
+        }
+
+        /* Torn paper edge feeding into the terminal/stats panel */
+        .torn-top {
+            clip-path: polygon(0% 22px, 4% 0, 8% 22px, 12% 0, 16% 22px, 20% 0, 24% 22px, 28% 0,
+                    32% 22px, 36% 0, 40% 22px, 44% 0, 48% 22px, 52% 0, 56% 22px, 60% 0,
+                    64% 22px, 68% 0, 72% 22px, 76% 0, 80% 22px, 84% 0, 88% 22px, 92% 0,
+                    96% 22px, 100% 0, 100% 100%, 0 100%);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-6px) rotate(0deg) !important;
+            transition: all 0.3s ease;
+        }
+
+        .tape {
+            position: absolute;
+            width: 64px;
+            height: 22px;
+            background: rgba(255, 255, 255, 0.55);
+            border: 1px solid rgba(0, 0, 0, 0.04);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(14px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-up {
+            animation: fadeUp 0.7s ease both;
+        }
+
+        .fade-up-1 {
+            animation-delay: 0.05s;
+        }
+
+        .fade-up-2 {
+            animation-delay: 0.18s;
+        }
+
+        .fade-up-3 {
+            animation-delay: 0.32s;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .fade-up {
+                animation: none;
+            }
+
+            .feature-card:hover {
+                transform: none !important;
+            }
+        }
+
+        a:focus-visible,
+        button:focus-visible {
+            outline: 2px solid #0E7C66;
+            outline-offset: 2px;
+        }
     </style>
 </head>
 
-<body class="bg-gray-50 text-gray-900">
+<body class="bg-paper text-ink font-body">
 
     <!-- Navigation -->
-    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
+    <nav class="fixed w-full z-50 bg-paper/90 backdrop-blur-md border-b border-line/70">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16 items-center">
                 <div class="flex items-center gap-3">
-                    <!-- Updated Logo with provided image -->
                     <img src="assets/images/logo/logo.png" alt="Sodi - Phần mềm quản lý bán hàng" width="40" height="40"
                         class="logo-img">
-                    <span
-                        class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-800">Sodi</span>
+                    <span class="text-2xl font-display font-extrabold text-ink">Sodi</span>
                 </div>
-                <div class="hidden md:flex space-x-8 font-medium">
-                    <a href="#features" class="hover:text-blue-600 transition">Tính năng</a>
-                    <a href="#about" class="hover:text-blue-600 transition">Về chúng tôi</a>
+                <div class="hidden md:flex items-center gap-8 font-medium">
+                    <a href="#features" class="hover:text-pos transition">Tính năng</a>
+                    <a href="#about" class="hover:text-pos transition">Về chúng tôi</a>
                     <a href="#download"
-                        class="bg-blue-600 text-white px-5 py-2 rounded-full hover:bg-blue-700 transition">Tải ngay</a>
+                        class="font-mono text-sm border-2 border-stamp text-stamp px-5 py-2 rounded-full hover:bg-stamp hover:text-white transition duration-200 hover:-rotate-2">Tải
+                        ngay</a>
                 </div>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="pt-32 pb-20 px-4">
+    <section class="pt-36 pb-20 px-4 relative overflow-hidden">
         <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12">
-            <div class="flex-1 text-center lg:text-left">
-                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
-                    Quản lý bán hàng <br> <span class="text-blue-600">Dễ dàng & Hiệu quả</span>
+            <div class="flex-1 text-center lg:text-left fade-up fade-up-1">
+                <p class="font-mono text-xs tracking-widest text-pos mb-4">SODI · HÓA ĐƠN #0001 · MIỄN PHÍ</p>
+                <h1 class="font-display text-4xl md:text-6xl font-extrabold leading-tight mb-6 text-ink">
+                    Quản lý bán hàng <br> <span class="text-pos">dễ dàng &amp; gọn gàng</span>
                 </h1>
                 <p class="text-lg text-gray-600 mb-8 max-w-xl mx-auto lg:mx-0">
-                    Sodi là <strong>phần mềm quản lý bán hàng</strong> và ứng dụng POS tối ưu giúp bạn quản lý đơn hàng,
-                    kho hàng, hóa đơn bán hàng và doanh thu ngay trên điện thoại.
-                    Phù hợp cho chủ shop, quán cafe và kinh doanh nhỏ lẻ.
+                    Sodi là <strong>phần mềm quản lý bán hàng</strong> và ứng dụng POS giúp bạn quản lý đơn hàng,
+                    kho hàng, hóa đơn bán hàng và doanh thu ngay trên điện thoại. Phù hợp cho chủ shop, quán cafe
+                    và kinh doanh nhỏ lẻ.
                 </p>
                 <div class="flex flex-wrap justify-center lg:justify-start gap-4" id="download">
                     <a href="https://apps.apple.com/us/app/sodi-qu%E1%BA%A3n-l%C3%BD-b%C3%A1n-h%C3%A0ng/id6474116712"
                         target="_blank" rel="noopener" aria-label="Tải Sodi trên App Store"
-                        class="flex items-center bg-black text-white px-6 py-3 rounded-xl hover:scale-105 transition duration-300">
+                        class="flex items-center bg-ink text-white px-6 py-3 rounded-xl hover:scale-105 transition duration-300">
                         <i class="fab fa-apple text-3xl mr-3" aria-hidden="true"></i>
                         <div class="text-left">
-                            <p class="text-xs uppercase">Download on the</p>
+                            <p class="text-xs uppercase opacity-70">Download on the</p>
                             <p class="text-sm font-semibold">App Store</p>
                         </div>
                     </a>
                     <a href="https://play.google.com/store/apps/details?id=com.buffchalo.sales_management"
                         target="_blank" rel="noopener" aria-label="Tải Sodi trên Google Play"
-                        class="flex items-center bg-black text-white px-6 py-3 rounded-xl hover:scale-105 transition duration-300">
+                        class="flex items-center bg-ink text-white px-6 py-3 rounded-xl hover:scale-105 transition duration-300">
                         <i class="fab fa-google-play text-2xl mr-3" aria-hidden="true"></i>
                         <div class="text-left">
-                            <p class="text-xs uppercase">Get it on</p>
+                            <p class="text-xs uppercase opacity-70">Get it on</p>
                             <p class="text-sm font-semibold">Google Play</p>
                         </div>
                     </a>
                 </div>
             </div>
-            <div class="flex-1 relative">
-                <img src="assets/images/hero/phone.png" class="mx-auto overflow-hidden relative" width="400"
-                    height="800" fetchpriority="high" alt="Giao diện phần mềm quản lý bán hàng Sodi trên điện thoại">
-                <!-- Decorative elements -->
-                <div class="absolute -top-10 -right-10 w-24 h-24 bg-blue-200 rounded-full blur-3xl opacity-50"></div>
-                <div class="absolute -bottom-10 -left-10 w-32 h-32 bg-indigo-200 rounded-full blur-3xl opacity-50">
-                </div>
+            <div class="flex-1 relative flex justify-center fade-up fade-up-2">
+                <img src="assets/images/hero/phone.png" class="mx-auto overflow-hidden relative z-10" width="380"
+                    height="760" fetchpriority="high" alt="Giao diện phần mềm quản lý bán hàng Sodi trên điện thoại">
+
+                <!-- Signature element: a receipt "printing out" of the phone, listing features as line items -->
+                <svg viewBox="0 0 200 300" width="150"
+                    class="hidden sm:block absolute -bottom-6 -right-2 sm:right-6 rotate-6 drop-shadow-2xl z-20"
+                    xmlns="http://www.w3.org/2000/svg" role="img"
+                    aria-label="Hóa đơn điện tử Sodi liệt kê các tính năng">
+                    <path
+                        d="M0,0 H200 V270 L190,280 L180,270 L170,280 L160,270 L150,280 L140,270 L130,280 L120,270 L110,280 L100,270 L90,280 L80,270 L70,280 L60,270 L50,280 L40,270 L30,280 L20,270 L10,280 L0,270 Z"
+                        fill="#FBF8F2" stroke="#D8D0C0" stroke-width="1.5" />
+                    <text x="100" y="28" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="15"
+                        font-weight="700" fill="#16242B">SODI</text>
+                    <text x="100" y="42" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="7"
+                        fill="#8a8a8a">HÓA ĐƠN BÁN HÀNG</text>
+                    <line x1="14" y1="52" x2="186" y2="52" stroke="#D8D0C0" stroke-width="1.5" stroke-dasharray="3 3" />
+                    <text x="14" y="72" font-family="IBM Plex Mono, monospace" font-size="9" fill="#16242B">Quản lý đơn
+                        hàng</text>
+                    <text x="186" y="72" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="9"
+                        fill="#0E7C66">✓</text>
+                    <text x="14" y="90" font-family="IBM Plex Mono, monospace" font-size="9" fill="#16242B">Quản lý kho
+                        hàng</text>
+                    <text x="186" y="90" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="9"
+                        fill="#0E7C66">✓</text>
+                    <text x="14" y="108" font-family="IBM Plex Mono, monospace" font-size="9" fill="#16242B">Hóa đơn tự
+                        động</text>
+                    <text x="186" y="108" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="9"
+                        fill="#0E7C66">✓</text>
+                    <text x="14" y="126" font-family="IBM Plex Mono, monospace" font-size="9" fill="#16242B">Báo cáo
+                        doanh thu</text>
+                    <text x="186" y="126" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="9"
+                        fill="#0E7C66">✓</text>
+                    <line x1="14" y1="140" x2="186" y2="140" stroke="#D8D0C0" stroke-width="1.5"
+                        stroke-dasharray="3 3" />
+                    <text x="14" y="160" font-family="IBM Plex Mono, monospace" font-size="10" font-weight="700"
+                        fill="#16242B">TỔNG CỘNG</text>
+                    <text x="186" y="160" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="10"
+                        font-weight="700" fill="#C0392B">MIỄN PHÍ</text>
+                    <g fill="#16242B">
+                        <rect x="20" y="185" width="2" height="26" />
+                        <rect x="25" y="185" width="1" height="26" />
+                        <rect x="29" y="185" width="3" height="26" />
+                        <rect x="35" y="185" width="1" height="26" />
+                        <rect x="39" y="185" width="2" height="26" />
+                        <rect x="44" y="185" width="1" height="26" />
+                        <rect x="48" y="185" width="3" height="26" />
+                        <rect x="54" y="185" width="2" height="26" />
+                        <rect x="59" y="185" width="1" height="26" />
+                        <rect x="63" y="185" width="3" height="26" />
+                        <rect x="69" y="185" width="1" height="26" />
+                        <rect x="73" y="185" width="2" height="26" />
+                        <rect x="78" y="185" width="1" height="26" />
+                        <rect x="82" y="185" width="3" height="26" />
+                        <rect x="88" y="185" width="2" height="26" />
+                        <rect x="93" y="185" width="1" height="26" />
+                        <rect x="97" y="185" width="3" height="26" />
+                        <rect x="103" y="185" width="1" height="26" />
+                        <rect x="107" y="185" width="2" height="26" />
+                        <rect x="112" y="185" width="1" height="26" />
+                        <rect x="116" y="185" width="3" height="26" />
+                        <rect x="122" y="185" width="2" height="26" />
+                        <rect x="127" y="185" width="1" height="26" />
+                        <rect x="131" y="185" width="3" height="26" />
+                        <rect x="137" y="185" width="1" height="26" />
+                        <rect x="141" y="185" width="2" height="26" />
+                        <rect x="146" y="185" width="1" height="26" />
+                        <rect x="150" y="185" width="3" height="26" />
+                        <rect x="156" y="185" width="2" height="26" />
+                        <rect x="161" y="185" width="1" height="26" />
+                        <rect x="165" y="185" width="3" height="26" />
+                        <rect x="171" y="185" width="1" height="26" />
+                        <rect x="175" y="185" width="2" height="26" />
+                    </g>
+                    <text x="100" y="225" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="7"
+                        fill="#8a8a8a">SD-2026-0001</text>
+                </svg>
+
+                <div class="absolute -top-10 -right-10 w-24 h-24 bg-pos/10 rounded-full blur-3xl"></div>
+                <div class="absolute -bottom-10 -left-10 w-32 h-32 bg-stamp/10 rounded-full blur-3xl"></div>
             </div>
         </div>
     </section>
 
+    <div class="perforation" style="--line:#D8D0C0"></div>
+
     <!-- Features Section -->
-    <section id="features" class="py-24 bg-white">
+    <section id="features" class="py-24 bg-paper">
         <div class="max-w-7xl mx-auto px-4">
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Tại sao nên chọn Sodi?</h2>
+                <p class="font-mono text-xs tracking-widest text-pos mb-3">TẠI SAO CHỌN SODI</p>
+                <h2 class="font-display text-3xl md:text-4xl font-extrabold mb-4">Mọi thứ bạn cần, trong một ứng dụng
+                </h2>
                 <p class="text-gray-600 max-w-2xl mx-auto">Chúng tôi cung cấp mọi công cụ cần thiết để bạn vận hành
                     doanh nghiệp của mình một cách mượt mà nhất.</p>
             </div>
 
-            <div class="grid md:grid-cols-3 gap-8">
+            <div class="grid md:grid-cols-3 gap-10 pt-4">
                 <!-- Feature 1 -->
-                <div class="feature-card p-8 rounded-2xl border border-gray-100 bg-gray-50 shadow-sm">
+                <div
+                    class="feature-card relative p-8 pt-9 rounded-lg bg-white border-2 border-dashed border-line shadow-sm -rotate-1">
                     <div
-                        class="w-14 h-14 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center mb-6 text-2xl">
-                        <i class="fas fa-file-invoice-dollar"></i>
+                        class="absolute -top-2 left-7 w-4 h-4 rounded-full bg-paper border-2 border-dashed border-line">
                     </div>
-                    <h3 class="text-xl font-bold mb-3">Tạo đơn nhanh chóng</h3>
-                    <p class="text-gray-600">Giao diện POS trực quan giúp nhân viên tạo hóa đơn chỉ trong vài giây, giảm
-                        thiểu thời gian chờ đợi của khách hàng.</p>
+                    <p class="font-mono text-xs text-stamp mb-4">PHIẾU 01</p>
+                    <div class="w-14 h-14 bg-pos/10 text-pos rounded-xl flex items-center justify-center mb-6 text-2xl">
+                        <i class="fas fa-file-invoice-dollar" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="text-xl font-display font-bold mb-3">Tạo đơn nhanh chóng</h3>
+                    <p class="text-gray-600">Giao diện POS trực quan giúp nhân viên tạo hóa đơn chỉ trong vài giây,
+                        giảm thiểu thời gian chờ đợi của khách hàng.</p>
                 </div>
 
                 <!-- Feature 2 -->
-                <div class="feature-card p-8 rounded-2xl border border-gray-100 bg-gray-50 shadow-sm">
+                <div
+                    class="feature-card relative p-8 pt-9 rounded-lg bg-white border-2 border-dashed border-line shadow-sm rotate-1 md:mt-6">
                     <div
-                        class="w-14 h-14 bg-green-100 text-green-600 rounded-xl flex items-center justify-center mb-6 text-2xl">
-                        <i class="fas fa-boxes"></i>
+                        class="absolute -top-2 left-7 w-4 h-4 rounded-full bg-paper border-2 border-dashed border-line">
                     </div>
-                    <h3 class="text-xl font-bold mb-3">Quản lý kho thông minh</h3>
+                    <p class="font-mono text-xs text-stamp mb-4">PHIẾU 02</p>
+                    <div class="w-14 h-14 bg-pos/10 text-pos rounded-xl flex items-center justify-center mb-6 text-2xl">
+                        <i class="fas fa-boxes" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="text-xl font-display font-bold mb-3">Quản lý kho thông minh</h3>
                     <p class="text-gray-600">Tự động trừ tồn kho khi bán hàng. Cảnh báo hàng sắp hết để bạn kịp thời
                         nhập hàng mới.</p>
                 </div>
 
                 <!-- Feature 3 -->
-                <div class="feature-card p-8 rounded-2xl border border-gray-100 bg-gray-50 shadow-sm">
+                <div
+                    class="feature-card relative p-8 pt-9 rounded-lg bg-white border-2 border-dashed border-line shadow-sm -rotate-1">
                     <div
-                        class="w-14 h-14 bg-purple-100 text-purple-600 rounded-xl flex items-center justify-center mb-6 text-2xl">
-                        <i class="fas fa-chart-pie"></i>
+                        class="absolute -top-2 left-7 w-4 h-4 rounded-full bg-paper border-2 border-dashed border-line">
                     </div>
-                    <h3 class="text-xl font-bold mb-3">Báo cáo doanh thu</h3>
-                    <p class="text-gray-600">Theo dõi doanh số theo ngày, tuần, tháng với biểu đồ trực quan giúp bạn đưa
-                        ra quyết định kinh doanh đúng đắn.</p>
+                    <p class="font-mono text-xs text-stamp mb-4">PHIẾU 03</p>
+                    <div class="w-14 h-14 bg-pos/10 text-pos rounded-xl flex items-center justify-center mb-6 text-2xl">
+                        <i class="fas fa-chart-pie" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="text-xl font-display font-bold mb-3">Báo cáo doanh thu</h3>
+                    <p class="text-gray-600">Theo dõi doanh số theo ngày, tuần, tháng với biểu đồ trực quan giúp bạn
+                        đưa ra quyết định kinh doanh đúng đắn.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Stats Section -->
-    <section class="py-20 gradient-bg text-white">
+    <!-- Stats Section: styled like a POS terminal display -->
+    <section class="torn-top pt-16 pb-20 bg-navy text-white">
         <div class="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
-                <p class="text-4xl font-bold mb-2">10k+</p>
-                <p class="text-blue-100">Người dùng tin dùng</p>
+                <p class="font-mono text-4xl font-bold mb-2 text-led"
+                    style="text-shadow:0 0 18px rgba(74,247,160,0.35)">10K+</p>
+                <p class="text-gray-400 text-sm tracking-wide">Người dùng tin dùng</p>
             </div>
             <div>
-                <p class="text-4xl font-bold mb-2">4.8</p>
-                <p class="text-blue-100">Đánh giá trung bình</p>
+                <p class="font-mono text-4xl font-bold mb-2 text-led"
+                    style="text-shadow:0 0 18px rgba(74,247,160,0.35)">4.8</p>
+                <p class="text-gray-400 text-sm tracking-wide">Đánh giá trung bình</p>
             </div>
             <div>
-                <p class="text-4xl font-bold mb-2">99%</p>
-                <p class="text-blue-100">Hài lòng từ khách hàng</p>
+                <p class="font-mono text-4xl font-bold mb-2 text-led"
+                    style="text-shadow:0 0 18px rgba(74,247,160,0.35)">99%</p>
+                <p class="text-gray-400 text-sm tracking-wide">Hài lòng từ khách hàng</p>
             </div>
             <div>
-                <p class="text-4xl font-bold mb-2">24/7</p>
-                <p class="text-blue-100">Hỗ trợ kỹ thuật</p>
+                <p class="font-mono text-4xl font-bold mb-2 text-led"
+                    style="text-shadow:0 0 18px rgba(74,247,160,0.35)">24/7</p>
+                <p class="text-gray-400 text-sm tracking-wide">Hỗ trợ kỹ thuật</p>
             </div>
         </div>
     </section>
 
-    <!-- Testimonials or Screenshots -->
-    <section id="about" class="py-24 overflow-hidden">
+    <!-- Testimonials / About -->
+    <section id="about" class="py-24 overflow-hidden bg-paper">
         <div class="max-w-7xl mx-auto px-4 flex flex-col lg:flex-row items-center gap-16">
-            <div class="flex-1">
+            <div class="flex-1 relative">
                 <img src="https://images.unsplash.com/photo-1556742044-3c52d6e88c62?auto=format&fit=crop&q=80&w=800"
                     alt="Chủ shop sử dụng phần mềm quản lý bán hàng Sodi tại quầy thu ngân" width="800" height="600"
-                    loading="lazy" class="rounded-3xl shadow-2xl rotate-3 hover:rotate-0 transition duration-500">
+                    loading="lazy" class="rounded-lg shadow-2xl rotate-2 hover:rotate-0 transition duration-500">
+                <div class="tape -top-3 left-10 -rotate-6"></div>
+                <div class="tape -top-3 right-10 rotate-6"></div>
             </div>
             <div class="flex-1">
-                <h2 class="text-3xl font-bold mb-6">Giải pháp toàn diện cho mọi mô hình kinh doanh</h2>
+                <p class="font-mono text-xs tracking-widest text-pos mb-3">GIẢI PHÁP TOÀN DIỆN</p>
+                <h2 class="font-display text-3xl font-extrabold mb-6">Cho mọi mô hình kinh doanh</h2>
                 <ul class="space-y-4">
                     <li class="flex items-start gap-3">
-                        <i class="fas fa-check-circle text-blue-600 mt-1"></i>
+                        <span class="font-mono text-pos mt-1">✓</span>
                         <span>Đồng bộ hóa dữ liệu thời gian thực trên nhiều thiết bị.</span>
                     </li>
                     <li class="flex items-start gap-3">
-                        <i class="fas fa-check-circle text-blue-600 mt-1"></i>
+                        <span class="font-mono text-pos mt-1">✓</span>
                         <span>Quản lý danh sách khách hàng và chương trình khuyến mãi.</span>
                     </li>
                     <li class="flex items-start gap-3">
-                        <i class="fas fa-check-circle text-blue-600 mt-1"></i>
+                        <span class="font-mono text-pos mt-1">✓</span>
                         <span>Tích hợp in hóa đơn qua Bluetooth/Wifi.</span>
                     </li>
                     <li class="flex items-start gap-3">
-                        <i class="fas fa-check-circle text-blue-600 mt-1"></i>
+                        <span class="font-mono text-pos mt-1">✓</span>
                         <span>Hoạt động ổn định ngay cả khi không có mạng.</span>
                     </li>
                 </ul>
-                <div class="mt-10">
-                    <p class="font-bold italic text-gray-700">"Sodi đã thay đổi hoàn toàn cách tôi quản lý cửa hàng quần
-                        áo của mình. Tiết kiệm 2 tiếng mỗi ngày cho việc đối soát sổ sách!"</p>
-                    <p class="text-sm text-gray-500 mt-2">— Chị Lan, Chủ Shop Thời Trang</p>
+                <div class="mt-10 relative bg-white border-2 border-dashed border-line rounded-lg p-6 -rotate-1">
+                    <p class="font-display font-semibold italic text-gray-700">"Sodi đã thay đổi hoàn toàn cách tôi
+                        quản lý cửa hàng quần áo của mình. Tiết kiệm 2 tiếng mỗi ngày cho việc đối soát sổ sách!"</p>
+                    <p class="font-mono text-sm text-gray-500 mt-3">— Chị Lan, Chủ Shop Thời Trang</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Call to Action -->
-    <section class="py-20 bg-gray-900 text-white text-center">
+    <section class="py-20 bg-ink text-white text-center">
         <div class="max-w-4xl mx-auto px-4">
-            <h2 class="text-3xl md:text-5xl font-bold mb-8">Sẵn sàng nâng tầm kinh doanh của bạn?</h2>
-            <p class="text-gray-400 mb-10 text-lg">Tải ứng dụng Sodi ngay hôm nay và trải nghiệm sự khác biệt. Hoàn toàn
-                miễn phí để bắt đầu.</p>
+            <p class="font-mono text-xs tracking-widest text-led/80 mb-4">MIỄN PHÍ · KHÔNG CẦN THẺ</p>
+            <h2 class="font-display text-3xl md:text-5xl font-extrabold mb-8">Sẵn sàng nâng tầm kinh doanh của bạn?</h2>
+            <p class="text-gray-400 mb-10 text-lg">Tải ứng dụng Sodi ngay hôm nay và trải nghiệm sự khác biệt. Hoàn
+                toàn miễn phí để bắt đầu.</p>
             <div class="flex flex-wrap justify-center gap-6">
                 <a href="https://apps.apple.com/us/app/sodi-qu%E1%BA%A3n-l%C3%BD-b%C3%A1n-h%C3%A0ng/id6474116712"
                     target="_blank" rel="noopener" class="hover:opacity-80 transition">
@@ -300,20 +481,20 @@
     </section>
 
     <!-- Footer -->
-    <footer class="py-10 border-t border-gray-200">
+    <footer class="py-10 border-t-2 border-dashed border-line bg-paper">
         <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-6">
             <div class="flex items-center gap-3">
                 <img src="assets/images/logo/logo.png" alt="Sodi Logo" width="32" height="32" loading="lazy"
                     class="w-8 h-8 object-contain">
-                <span class="font-bold text-xl">Sodi POS</span>
+                <span class="font-display font-bold text-xl">Sodi POS</span>
             </div>
-            <p class="text-gray-500 text-sm">© 2026 Sodi Quản lý bán hàng. All rights reserved.</p>
+            <p class="font-mono text-gray-500 text-xs">© 2026 Sodi Quản lý bán hàng. All rights reserved.</p>
             <div class="flex space-x-6 text-gray-400">
-                <a href="https://www.facebook.com/soquanlydientu" target="_blank" rel="noopener" aria-label="Facebook"
-                    class="hover:text-blue-600"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
-                <a href="https://www.youtube.com/@SoDiPos" target="_blank" rel="noopener" aria-label="YouTube"
-                    class="hover:text-blue-600"><i class="fab fa-youtube" aria-hidden="true"></i></a>
-                <a href="mailto:support@sodientu.com" aria-label="Email" class="hover:text-blue-600"><i
+                <a href="https://facebook.com/soquanlydientu" target="_blank" rel="noopener" aria-label="Facebook"
+                    class="hover:text-pos"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                <a href="https://youtube.com/@SoDiPos" target="_blank" rel="noopener" aria-label="YouTube"
+                    class="hover:text-pos"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+                <a href="mailto:support@sodientu.com" aria-label="Email" class="hover:text-pos"><i
                         class="fas fa-envelope" aria-hidden="true"></i></a>
             </div>
         </div>
