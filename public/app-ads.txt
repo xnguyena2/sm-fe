@@ -310,7 +310,6 @@ vungle.com,69356ac7192ce0aadaecae75,DIRECT,c107d686becd2d77
 contextweb.com,562852,RESELLER,89ff185a4c4e857c
 media.net,8CU12AQ1Y,RESELLER
 media.net,8CU9B72O6,RESELLER
-acexchange.co.kr,1317287336,RESELLER
 adagio.io,1522,RESELLER
 adform.com,2671,RESELLER
 adform.com,2742,RESELLER
@@ -380,6 +379,7 @@ e-planning.net,864690bcd16cd011,RESELLER,c1ba615865ed87b2
 eliteappgrade.com,494223,RESELLER
 equativ.com,4762,RESELLER,060d053dcf45cbf3
 equativ.com,5026,RESELLER,060d053dcf45cbf3
+eskimi.com,2020001211,RESELLER
 freewheel.tv,534608-r-523319,RESELLER
 fromthetop.io,65536,RESELLER
 gitberry.com,405100012,RESELLER
@@ -543,7 +543,6 @@ rubiconproject.com,26292,RESELLER,0bfd66d529a55807
 rubiconproject.com,26846,RESELLER,0bfd66d529a55807
 rubiconproject.com,26958,RESELLER,0bfd66d529a55807
 rubiconproject.com,27538,RESELLER,0bfd66d529a55807
-rubiconproject.com,27931,RESELLER,0bfd66d529a55807
 saharmedia.net,1683858,RESELLER
 sharethrough.com,26VgE1nN,RESELLER,d53b998a7bd4ecd2
 sharethrough.com,2f18331a,RESELLER,d53b998a7bd4ecd2
