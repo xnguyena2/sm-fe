@@ -2,8 +2,9 @@
 <html lang="vi">
 
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16666143438"></script>
+    <!-- Google tag (gtag.js). The library (~170 KB) loads 1.5s after the page has loaded
+         so it does not slow the first paint. config and the conversion below are queued in
+         dataLayer and sent when it arrives. -->
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
@@ -11,6 +12,14 @@
 
         gtag('config', 'AW-16666143438');
 
+        window.addEventListener('load', function () {
+            setTimeout(function () {
+                var s = document.createElement('script');
+                s.async = true;
+                s.src = 'https://www.googletagmanager.com/gtag/js?id=AW-16666143438';
+                document.head.appendChild(s);
+            }, 1500);
+        });
     </script>
 
     <!-- Event snippet for Xem trang Sodi conversion page -->
@@ -172,13 +181,13 @@
                             href="https://apps.apple.com/us/app/sodi-qu%E1%BA%A3n-l%C3%BD-b%C3%A1n-h%C3%A0ng/id6474116712"
                             target="_blank" rel="noopener" aria-label="Tải Sodi trên App Store">
                             <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
-                                alt="Tải trên App Store" width="162" height="54">
+                                alt="Tải trên App Store" width="162" height="54" fetchpriority="low">
                         </a>
                         <a class="store-link"
                             href="https://play.google.com/store/apps/details?id=com.buffchalo.sales_management"
                             target="_blank" rel="noopener" aria-label="Tải Sodi trên Google Play">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
-                                alt="Tải trên Google Play" width="182" height="54">
+                                alt="Tải trên Google Play" width="182" height="54" fetchpriority="low">
                         </a>
                     </div>
 
