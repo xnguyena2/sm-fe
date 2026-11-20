@@ -36,7 +36,7 @@
     <meta property="og:url" content="https://sodientu.com/">
     <meta property="og:title" content="Sodi - Phần Mềm Quản Lý Bán Hàng, POS & Kho Hàng Trên Điện Thoại">
     <meta property="og:description"
-        content="Ứng dụng quản lý bán hàng, kho hàng và hóa đơn ngay trên điện thoại. Phù hợp cho chủ shop, quán cafe và kinh doanh nhỏ lẻ. Hoàn toàn miễn phí để bắt đầu.">
+        content="Ứng dụng quản lý bán hàng, kho hàng và hóa đơn ngay trên điện thoại. Phù hợp cho chủ shop, quán cafe và kinh doanh nhỏ lẻ. Miễn phí để bắt đầu.">
     <meta property="og:image" content="https://sodientu.com/assets/images/hero/phone.png">
     <meta property="og:locale" content="vi_VN">
     <meta property="og:site_name" content="Sodi">
@@ -56,9 +56,9 @@
         href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="preload" as="image" href="assets/images/hero/phone.webp" type="image/webp">
-    <link rel="stylesheet" href="assets/css/site.css">
+    <link rel="stylesheet" href="assets/css/site.css?v=d2756e64">
 
-    <!-- Structured data: helps Google show star rating / install info in search results -->
+    <!-- Structured data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -66,9 +66,8 @@
       "name": "Sodi - Quản lý bán hàng",
       "url": "https://sodientu.com/",
       "applicationCategory": "BusinessApplication",
-      "operatingSystem": "Android, iOS",
-      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "VND" },
-      "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "ratingCount": "10000" }
+      "operatingSystem": "Android, iOS, Web",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "VND" }
     }
     </script>
     <script type="application/ld+json">
@@ -79,27 +78,27 @@
         {
           "@type": "Question",
           "name": "Sodi có miễn phí không?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Bạn có thể tải Sodi trên App Store hoặc Google Play và bắt đầu sử dụng miễn phí, không cần thẻ thanh toán." }
+          "acceptedAnswer": { "@type": "Answer", "text": "Sodi miễn phí để bắt đầu: tải trên App Store hoặc Google Play, không cần thẻ thanh toán. Gói Miễn phí có quảng cáo. Gói Pro (6 tháng hoặc 1 năm) mua ngay trong ứng dụng." }
         },
         {
           "@type": "Question",
           "name": "Sodi chạy trên thiết bị nào?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Sodi có ứng dụng cho điện thoại Android và iPhone. Dữ liệu được đồng bộ để bạn và nhân viên dùng trên nhiều thiết bị." }
+          "acceptedAnswer": { "@type": "Answer", "text": "Sodi dùng được trên điện thoại Android, iPhone, máy tính bảng, máy POS màn hình lớn và máy tính qua trang console.sodientu.com. Dữ liệu đồng bộ giữa nhiều thiết bị cùng lúc." }
         },
         {
           "@type": "Question",
           "name": "Sodi in hóa đơn bằng loại máy in nào?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Sodi kết nối với máy in hóa đơn nhiệt qua Bluetooth, Wifi hoặc USB. Ứng dụng cũng hỗ trợ in tem mã vạch và in phiếu bếp." }
+          "acceptedAnswer": { "@type": "Answer", "text": "Sodi kết nối với máy in hóa đơn nhiệt qua Bluetooth hoặc mạng LAN, và có thể xuất hóa đơn ra PDF. Ứng dụng cũng in được phiếu bếp và tem nhãn sản phẩm." }
         },
         {
           "@type": "Question",
-          "name": "Không có mạng thì có bán hàng được không?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Có. Sodi hoạt động ổn định ngay cả khi mất kết nối và đồng bộ lại dữ liệu khi có mạng." }
+          "name": "Khách chuyển khoản thì làm sao biết tiền đã về?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Sodi tạo mã QR chuyển khoản (VietQR) ngay trên đơn. Khi kết nối tài khoản ngân hàng qua SePay, đơn được tự xác nhận khi tiền về." }
         },
         {
           "@type": "Question",
           "name": "Tôi có thể cho nhân viên dùng chung cửa hàng không?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Được. Bạn tạo tài khoản nhân viên, phân quyền cho từng người và quản lý ca làm, bảng lương ngay trong ứng dụng." }
+          "acceptedAnswer": { "@type": "Answer", "text": "Được. Bạn tạo tài khoản nhân viên, phân quyền từng việc, xếp lịch ca, chấm công và tính lương theo công ngay trong ứng dụng." }
         },
         {
           "@type": "Question",
@@ -125,7 +124,8 @@
             <nav class="nav" id="nav" aria-label="Điều hướng chính">
                 <a class="nav-link" href="#tinh-nang">Tính năng</a>
                 <a class="nav-link" href="#nganh-hang">Ngành hàng</a>
-                <a class="nav-link" href="#danh-gia">Đánh giá</a>
+                <a class="nav-link" href="/huong-dan">Hướng dẫn</a>
+                <a class="nav-link" href="/kien-thuc">Kiến thức</a>
                 <a class="nav-link" href="#hoi-dap">Hỏi đáp</a>
                 <a class="btn btn-primary btn-sm nav-cta" href="#tai-ung-dung">Tải ứng dụng</a>
             </nav>
@@ -158,13 +158,13 @@
                             <svg class="check-ico" viewBox="0 0 24 24" aria-hidden="true">
                                 <path d="M5 12.5l4.5 4.5L19 7.5" />
                             </svg>
-                            Tự động trừ tồn kho, báo khi hàng sắp hết
+                            Tự động trừ tồn kho, báo hàng sắp hết hạn
                         </li>
                         <li>
                             <svg class="check-ico" viewBox="0 0 24 24" aria-hidden="true">
                                 <path d="M5 12.5l4.5 4.5L19 7.5" />
                             </svg>
-                            Xem doanh thu và lợi nhuận theo ngày, tuần, tháng
+                            Xem doanh thu và lợi nhuận theo giờ, ngày, tháng
                         </li>
                     </ul>
 
@@ -184,11 +184,7 @@
                     </div>
 
                     <div class="trust">
-                        <div class="trust-item">
-                            <span class="stars" aria-hidden="true">★★★★★</span>
-                            <span><strong>4,8</strong> điểm đánh giá</span>
-                        </div>
-                        <div class="trust-item"><strong>10.000+</strong> người dùng</div>
+                        <div class="trust-item"><strong>Android, iPhone</strong> và máy tính</div>
                         <div class="trust-item">Không cần thẻ thanh toán</div>
                     </div>
                 </div>
@@ -214,7 +210,7 @@
                                 <path d="M12 4l9 16H3zM12 10v4M12 17h.01" />
                             </svg>
                         </span>
-                        <span class="float-text"><strong>Hàng sắp hết</strong><small>Nhập thêm trước khi hết</small></span>
+                        <span class="float-text"><strong>Lô sắp hết hạn</strong><small>Kiểm tra trước khi bán</small></span>
                     </div>
                 </div>
             </div>
@@ -245,20 +241,20 @@
 
                     <div class="fgrid">
                         <div class="fitem">
-                            <h3 class="h4">Ăn tại bàn, mang về, giao hàng</h3>
+                            <h3 class="h4">Tại bàn, mang đi, app giao đồ ăn</h3>
                             <p>Chọn loại đơn ngay khi tạo và theo dõi bàn đang phục vụ.</p>
                         </div>
                         <div class="fitem">
                             <h3 class="h4">Giá lẻ và giá sỉ</h3>
-                            <p>Đổi bảng giá cho từng khách chỉ với một lần chạm.</p>
+                            <p>Bán giá sỉ cho khách mua nhiều, giá lẻ cho khách thường.</p>
                         </div>
                         <div class="fitem">
-                            <h3 class="h4">In hóa đơn không dây</h3>
-                            <p>Kết nối máy in nhiệt qua Bluetooth, Wifi hoặc USB.</p>
+                            <h3 class="h4">In hóa đơn tại quầy</h3>
+                            <p>Kết nối máy in nhiệt qua Bluetooth hoặc mạng LAN.</p>
                         </div>
                         <div class="fitem">
                             <h3 class="h4">Thanh toán bằng mã QR</h3>
-                            <p>Tạo mã QR chuyển khoản ngay trên đơn hàng.</p>
+                            <p>Tạo mã VietQR ngay trên đơn, tự xác nhận khi tiền về.</p>
                         </div>
                     </div>
 
@@ -278,7 +274,7 @@
                         <div class="seg">
                             <span class="seg-item seg-on">Ăn tại bàn</span>
                             <span class="seg-item">Mang về</span>
-                            <span class="seg-item">Giao hàng</span>
+                            <span class="seg-item">Giao đồ ăn</span>
                         </div>
                         <ul class="lines">
                             <li><span class="line-name">Cà phê sữa<small>x2</small></span><span class="line-price">58.000</span></li>
@@ -311,8 +307,8 @@
                             <p>Mỗi đơn bán ra đều cập nhật số lượng trong kho ngay lập tức.</p>
                         </div>
                         <div class="fitem">
-                            <h3 class="h4">Cảnh báo hàng sắp hết</h3>
-                            <p>Nhận biết mặt hàng cần nhập thêm trước khi hết hàng.</p>
+                            <h3 class="h4">Cảnh báo sắp hết hạn</h3>
+                            <p>Biết lô hàng nào sắp hết hạn để xử lý kịp.</p>
                         </div>
                         <div class="fitem">
                             <h3 class="h4">Lô hàng và hạn sử dụng</h3>
@@ -334,7 +330,7 @@
                         aria-label="Minh họa màn hình kho hàng: danh sách sản phẩm với thanh tồn kho và cảnh báo sắp hết">
                         <div class="panel-head">
                             <span class="panel-title">Tồn kho</span>
-                            <span class="badge badge-amber">1 sản phẩm sắp hết</span>
+                            <span class="badge badge-amber">1 lô sắp hết hạn</span>
                         </div>
                         <ul class="stock">
                             <li>
@@ -382,12 +378,12 @@
                             <p>Nhân viên quét mã để vào cửa hàng, không cần nhớ mật khẩu dài.</p>
                         </div>
                         <div class="fitem">
-                            <h3 class="h4">Lịch ca và bảng lương</h3>
-                            <p>Xếp ca theo tuần và tính lương từ số ca đã làm.</p>
+                            <h3 class="h4">Lịch ca và chấm công</h3>
+                            <p>Xếp ca, chấm công vào ra và tính lương theo công.</p>
                         </div>
                         <div class="fitem">
                             <h3 class="h4">Báo cáo doanh thu, lợi nhuận</h3>
-                            <p>Biểu đồ theo ngày, tuần, tháng để bạn ra quyết định nhanh hơn.</p>
+                            <p>Xem theo giờ, ngày, tháng, món bán chạy và xuất ra Excel.</p>
                         </div>
                     </div>
 
@@ -432,12 +428,12 @@
                     <article class="tile">
                         <span class="tile-ico"><svg viewBox="0 0 24 24"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z" /></svg></span>
                         <h3 class="h4">Tích điểm khách hàng</h3>
-                        <p>Cộng điểm theo đơn hàng và điều chỉnh điểm thủ công khi cần.</p>
+                        <p>Cộng điểm theo đơn, khách đổi điểm lấy giảm giá.</p>
                     </article>
                     <article class="tile">
                         <span class="tile-ico"><svg viewBox="0 0 24 24"><path d="M4 6v12M7 6v12M11 6v12M14 6v12M17 6v12M20 6v12" /></svg></span>
-                        <h3 class="h4">In tem mã vạch</h3>
-                        <p>Thiết kế tem, chọn khổ giấy và in nhãn cho sản phẩm.</p>
+                        <h3 class="h4">In tem nhãn</h3>
+                        <p>In tem nhãn cho sản phẩm, kèm hạn sử dụng theo lô.</p>
                     </article>
                     <article class="tile">
                         <span class="tile-ico"><svg viewBox="0 0 24 24"><path d="M5 14a7 7 0 0 1 14 0M3 14h18v2a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3zM12 7V5" /></svg></span>
@@ -460,9 +456,9 @@
                         <p>Lưu danh sách khách và áp dụng giảm giá cho từng đơn.</p>
                     </article>
                     <article class="tile">
-                        <span class="tile-ico"><svg viewBox="0 0 24 24"><path d="M3 3l18 18M8.5 8.8A8 8 0 0 0 3 11M5.5 14a8 8 0 0 1 4-2.3M12 19.5h.01M16 12a8 8 0 0 1 5 2M13.5 8A12 12 0 0 1 21 11" /></svg></span>
-                        <h3 class="h4">Bán hàng khi mất mạng</h3>
-                        <p>Vẫn tạo đơn bình thường, dữ liệu đồng bộ lại khi có mạng.</p>
+                        <span class="tile-ico"><svg viewBox="0 0 24 24"><path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18zM3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z" /></svg></span>
+                        <h3 class="h4">Website bán hàng riêng</h3>
+                        <p>Menu tự lấy từ app, có mã QR để khách đặt đơn online.</p>
                     </article>
                     <article class="tile">
                         <span class="tile-ico"><svg viewBox="0 0 24 24"><path d="M3 6h13v9H3zM16 9h5v6h-5zM8 19h5M5.5 15v4" /></svg></span>
@@ -495,11 +491,12 @@
                         <h3 class="h3">Quản lý cửa hàng bán lẻ từ quầy đến kho</h3>
                         <p>Phù hợp với tạp hóa, shop thời trang, mỹ phẩm và cửa hàng tiện lợi.</p>
                         <a class="btn btn-primary" href="#tai-ung-dung">Tải ứng dụng miễn phí</a>
+                        <a class="text-link card-link" href="/nganh/phan-mem-quan-ly-tap-hoa">Xem chi tiết tạp hóa</a>
                     </div>
                     <ul class="tabpanel-list">
                         <li>Quét mã vạch để thêm hàng vào đơn</li>
                         <li>Giá lẻ, giá sỉ cho từng nhóm khách</li>
-                        <li>In tem mã vạch và theo dõi hạn sử dụng</li>
+                        <li>In tem nhãn và theo dõi hạn sử dụng theo lô</li>
                         <li>Tích điểm và ghi nợ khách quen</li>
                     </ul>
                 </div>
@@ -508,11 +505,13 @@
                         <h3 class="h3">Phục vụ nhanh vào giờ cao điểm</h3>
                         <p>Phù hợp với quán cafe, trà sữa, quán ăn và tiệm bánh.</p>
                         <a class="btn btn-primary" href="#tai-ung-dung">Tải ứng dụng miễn phí</a>
+                        <a class="text-link card-link" href="/nganh/phan-mem-quan-ly-quan-cafe">Xem chi tiết quán cafe</a>
+                        <a class="text-link card-link" href="/nganh/phan-mem-quan-ly-quan-an">Xem chi tiết quán ăn</a>
                     </div>
                     <ul class="tabpanel-list">
-                        <li>Đơn ăn tại bàn, mang về và giao hàng</li>
+                        <li>Đơn tại bàn, mang đi và app giao đồ ăn</li>
                         <li>In phiếu bếp ngay khi nhận đơn</li>
-                        <li>Thanh toán bằng mã QR tại quầy</li>
+                        <li>Thanh toán QR, tự xác nhận khi tiền về</li>
                         <li>Xếp ca và tính lương cho nhân viên</li>
                     </ul>
                 </div>
@@ -521,32 +520,31 @@
                         <h3 class="h3">Quản lý đơn thuê và công nợ dễ dàng</h3>
                         <p>Phù hợp với cho thuê đồ, thiết bị, phòng và các dịch vụ tính theo thời gian.</p>
                         <a class="btn btn-primary" href="#tai-ung-dung">Tải ứng dụng miễn phí</a>
+                        <a class="text-link card-link" href="/nganh/phan-mem-quan-ly-cho-thue">Xem chi tiết cho thuê</a>
                     </div>
                     <ul class="tabpanel-list">
-                        <li>Tính tiền thuê theo giờ, ngày, tháng hoặc năm</li>
+                        <li>Tính tiền thuê theo giờ, ngày hoặc tháng</li>
                         <li>Theo dõi đơn đang thuê và đơn quá hạn</li>
-                        <li>Ghi nhận trả đồ và thu tiền còn lại</li>
+                        <li>Ghi nợ và thu tiền từng phần</li>
                         <li>Báo cáo doanh thu theo từng giai đoạn</li>
                     </ul>
                 </div>
             </div>
         </section>
 
-        <!-- Social proof -->
-        <section class="section section-deep" id="danh-gia">
+        <!-- Why Sodi (facts only, no testimonials or invented numbers) -->
+        <section class="section section-deep" id="vi-sao-chon-sodi">
             <div class="wrap proof">
-                <figure class="quote">
-                    <blockquote>
-                        <p>Sodi đã thay đổi hoàn toàn cách tôi quản lý cửa hàng quần áo của mình. Tiết kiệm 2 tiếng mỗi
-                            ngày cho việc đối soát sổ sách!</p>
-                    </blockquote>
-                    <figcaption>Chị Lan, chủ shop thời trang</figcaption>
-                </figure>
+                <div class="quote">
+                    <h2 class="proof-title">Làm cho người bán hàng nhỏ ở Việt Nam</h2>
+                    <p class="proof-lead">Giao diện tiếng Việt, dùng ngay trên điện thoại bạn đang có. Không cần mua
+                        máy POS đắt tiền để bắt đầu.</p>
+                </div>
                 <dl class="stats">
-                    <div class="stat"><dt>Người dùng tin dùng</dt><dd>10.000+</dd></div>
-                    <div class="stat"><dt>Đánh giá trung bình</dt><dd>4,8</dd></div>
-                    <div class="stat"><dt>Hài lòng từ khách hàng</dt><dd>99%</dd></div>
-                    <div class="stat"><dt>Hỗ trợ kỹ thuật</dt><dd>24/7</dd></div>
+                    <div class="stat"><dt>Điện thoại, máy tính bảng, máy tính</dt><dd>Đa thiết bị</dd></div>
+                    <div class="stat"><dt>Tự xác nhận chuyển khoản</dt><dd>VietQR</dd></div>
+                    <div class="stat"><dt>Chủ và nhân viên dùng chung</dt><dd>Đồng bộ</dd></div>
+                    <div class="stat"><dt>Không cần thẻ thanh toán</dt><dd>Miễn phí</dd></div>
                 </dl>
             </div>
         </section>
@@ -560,27 +558,28 @@
                 <div class="faq">
                     <details class="qa">
                         <summary>Sodi có miễn phí không?</summary>
-                        <p>Bạn có thể tải Sodi trên App Store hoặc Google Play và bắt đầu sử dụng miễn phí, không cần
-                            thẻ thanh toán.</p>
+                        <p>Sodi miễn phí để bắt đầu: tải trên App Store hoặc Google Play, không cần thẻ thanh toán.
+                            Gói Miễn phí có quảng cáo. Gói Pro (6 tháng hoặc 1 năm) mua ngay trong ứng dụng.</p>
                     </details>
                     <details class="qa">
                         <summary>Sodi chạy trên thiết bị nào?</summary>
-                        <p>Sodi có ứng dụng cho điện thoại Android và iPhone. Dữ liệu được đồng bộ để bạn và nhân
-                            viên dùng trên nhiều thiết bị.</p>
+                        <p>Sodi dùng được trên điện thoại Android, iPhone, máy tính bảng, máy POS màn hình lớn và máy
+                            tính qua trang console.sodientu.com. Dữ liệu đồng bộ giữa nhiều thiết bị cùng lúc.</p>
                     </details>
                     <details class="qa">
                         <summary>Sodi in hóa đơn bằng loại máy in nào?</summary>
-                        <p>Sodi kết nối với máy in hóa đơn nhiệt qua Bluetooth, Wifi hoặc USB. Ứng dụng cũng hỗ trợ in
-                            tem mã vạch và in phiếu bếp.</p>
+                        <p>Sodi kết nối với máy in hóa đơn nhiệt qua Bluetooth hoặc mạng LAN, và có thể xuất hóa đơn
+                            ra PDF. Ứng dụng cũng in được phiếu bếp và tem nhãn sản phẩm.</p>
                     </details>
                     <details class="qa">
-                        <summary>Không có mạng thì có bán hàng được không?</summary>
-                        <p>Có. Sodi hoạt động ổn định ngay cả khi mất kết nối và đồng bộ lại dữ liệu khi có mạng.</p>
+                        <summary>Khách chuyển khoản thì làm sao biết tiền đã về?</summary>
+                        <p>Sodi tạo mã QR chuyển khoản (VietQR) ngay trên đơn. Khi kết nối tài khoản ngân hàng qua
+                            SePay, đơn được tự xác nhận khi tiền về.</p>
                     </details>
                     <details class="qa">
                         <summary>Tôi có thể cho nhân viên dùng chung cửa hàng không?</summary>
-                        <p>Được. Bạn tạo tài khoản nhân viên, phân quyền cho từng người và quản lý ca làm, bảng lương
-                            ngay trong ứng dụng.</p>
+                        <p>Được. Bạn tạo tài khoản nhân viên, phân quyền từng việc, xếp lịch ca, chấm công và tính
+                            lương theo công ngay trong ứng dụng.</p>
                     </details>
                     <details class="qa">
                         <summary>Tôi liên hệ hỗ trợ bằng cách nào?</summary>
@@ -596,7 +595,7 @@
         <section class="closing">
             <div class="wrap closing-inner">
                 <h2 class="closing-title">Sẵn sàng quản lý cửa hàng gọn hơn?</h2>
-                <p class="closing-lead">Tải Sodi ngay hôm nay. Hoàn toàn miễn phí để bắt đầu, không cần thẻ thanh toán.
+                <p class="closing-lead">Tải Sodi ngay hôm nay. Miễn phí để bắt đầu, không cần thẻ thanh toán.
                 </p>
                 <div class="store-row store-row-center">
                     <a class="store-link"
@@ -629,9 +628,16 @@
             <div class="footer-col">
                 <h3 class="footer-h">Sản phẩm</h3>
                 <a href="#tinh-nang">Tính năng</a>
-                <a href="#nganh-hang">Ngành hàng</a>
-                <a href="#danh-gia">Đánh giá</a>
                 <a href="#hoi-dap">Hỏi đáp</a>
+                <a href="/huong-dan">Hướng dẫn</a>
+                <a href="/kien-thuc">Kiến thức</a>
+            </div>
+            <div class="footer-col">
+                <h3 class="footer-h">Ngành hàng</h3>
+                <a href="/nganh/phan-mem-quan-ly-quan-cafe">Quán cafe, trà sữa</a>
+                <a href="/nganh/phan-mem-quan-ly-quan-an">Quán ăn</a>
+                <a href="/nganh/phan-mem-quan-ly-tap-hoa">Tạp hóa</a>
+                <a href="/nganh/phan-mem-quan-ly-cho-thue">Cho thuê</a>
             </div>
             <div class="footer-col">
                 <h3 class="footer-h">Tải ứng dụng</h3>
@@ -648,11 +654,11 @@
             </div>
         </div>
         <div class="wrap footer-base">
-            <p>© <span id="year">2026</span> Sodi Quản lý bán hàng. Bảo lưu mọi quyền.</p>
+            <p>© <span id="year">2026</span> Sodi Quản lý bán hàng. <a href="/privacy-policy.html">Chính sách bảo mật</a> · <a href="/terms-of-service.html">Điều khoản</a></p>
         </div>
     </footer>
 
-    <script src="assets/js/site.js" defer></script>
+    <script src="assets/js/site.js?v=340e467a" defer></script>
 </body>
 
 </html>

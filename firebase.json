@@ -2,10 +2,20 @@
   "hosting": {
     "site": "sodientu-4a6d0",
     "public": "public",
+    "cleanUrls": true,
+    "trailingSlash": false,
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
+    ],
+    "headers": [
+      {
+        "source": "**/assets/**",
+        "headers": [
+          { "key": "Cache-Control", "value": "public, max-age=2592000" }
+        ]
+      }
     ]
   }
 }

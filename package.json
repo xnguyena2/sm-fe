@@ -1,0 +1,14 @@
+{
+  "name": "sodientu-web",
+  "private": true,
+  "type": "module",
+  "description": "Static site for sodientu.com. Content lives in content/, pages are generated into public/.",
+  "scripts": {
+    "build": "node tools/build.mjs",
+    "serve": "npx --yes serve public"
+  },
+  "devDependencies": {
+    "gray-matter": "^4.0.3",
+    "marked": "^15.0.0"
+  }
+}

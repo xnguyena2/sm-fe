@@ -56,6 +56,15 @@
         });
     });
 
+    // Google Ads / GA4: count clicks on the store buttons on every page.
+    document.addEventListener('click', function (e) {
+        var a = e.target.closest && e.target.closest('a[href]');
+        if (!a || typeof window.gtag !== 'function') return;
+        var store = a.href.indexOf('apps.apple.com') > -1 ? 'app_store'
+            : a.href.indexOf('play.google.com') > -1 ? 'google_play' : null;
+        if (store) window.gtag('event', 'click_download', { store: store, page_path: location.pathname });
+    });
+
     var y = document.getElementById('year');
     if (y) y.textContent = new Date().getFullYear();
 })();
