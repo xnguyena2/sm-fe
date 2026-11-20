@@ -116,12 +116,22 @@ function storeBadges(lazy = true) {
 function trackingHead() {
   const ga4 = GA4_ID ? `\n        gtag('config', '${GA4_ID}');` : '';
   // No conversion event here: the "Xem trang Sodi" conversion stays on the home page only.
-  return `<script async src="https://www.googletagmanager.com/gtag/js?id=${ADS_ID}"></script>
-    <script>
+  // gtag.js (~170 KB) is loaded after the page has loaded so it does not compete with the
+  // article for the main thread. Calls made before that are queued in dataLayer and sent
+  // once it arrives.
+  return `<script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
         gtag('config', '${ADS_ID}');${ga4}
+        window.addEventListener('load', function () {
+            setTimeout(function () {
+                var s = document.createElement('script');
+                s.async = true;
+                s.src = 'https://www.googletagmanager.com/gtag/js?id=${ADS_ID}';
+                document.head.appendChild(s);
+            }, 1500);
+        });
     </script>`;
 }
 
@@ -156,7 +166,8 @@ function head({ title, description, url, type = 'website', image = DEFAULT_IMAGE
     <link rel="apple-touch-icon" href="/assets/images/logo/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap"></noscript>
     <link rel="stylesheet" href="/assets/css/site.css?v=${CSS_V}">
 ${ld.map((o) => '    ' + jsonLd(o).replace(/\n/g, '\n    ')).join('\n')}
 

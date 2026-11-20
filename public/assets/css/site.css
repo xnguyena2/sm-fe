@@ -228,7 +228,8 @@ button { font: inherit; color: inherit; }
 .footer-base p { padding-top: 20px; border-top: 1px solid rgba(255, 255, 255, .12); }
 
 /* One entrance moment: hero */
-@keyframes rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+/* No opacity in the entrance: hidden content would delay LCP. */
+@keyframes rise { from { transform: translateY(14px); } to { transform: none; } }
 .hero-copy > * { animation: rise .6s cubic-bezier(.2, .7, .2, 1) both; }
 .hero-copy > :nth-child(2) { animation-delay: .06s; }
 .hero-copy > :nth-child(3) { animation-delay: .12s; }
