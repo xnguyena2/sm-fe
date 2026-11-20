@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhập danh sách sản phẩm từ Excel vào SoDi | SoDi</title>
+    <meta name="description" content="Hướng dẫn nhập sản phẩm hàng loạt từ Excel vào SoDi: lấy file mẫu, điền và làm sạch dữ liệu, nhập thử file nhỏ rồi kiểm tra, thay vì gõ tay từng món.">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0E7C66">
+    <link rel="canonical" href="https://sodientu.com/huong-dan/nhap-san-pham-tu-excel">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://sodientu.com/huong-dan/nhap-san-pham-tu-excel">
+    <meta property="og:title" content="Nhập danh sách sản phẩm từ Excel vào SoDi | SoDi">
+    <meta property="og:description" content="Hướng dẫn nhập sản phẩm hàng loạt từ Excel vào SoDi: lấy file mẫu, điền và làm sạch dữ liệu, nhập thử file nhỏ rồi kiểm tra, thay vì gõ tay từng món.">
+    <meta property="og:image" content="https://sodientu.com/assets/images/hero/phone.png">
+    <meta property="og:locale" content="vi_VN">
+    <meta property="og:site_name" content="SoDi">
+    <meta property="article:published_time" content="2026-11-20">
+    <meta property="article:modified_time" content="2026-11-20">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Nhập danh sách sản phẩm từ Excel vào SoDi | SoDi">
+    <meta name="twitter:description" content="Hướng dẫn nhập sản phẩm hàng loạt từ Excel vào SoDi: lấy file mẫu, điền và làm sạch dữ liệu, nhập thử file nhỏ rồi kiểm tra, thay vì gõ tay từng món.">
+    <meta name="twitter:image" content="https://sodientu.com/assets/images/hero/phone.png">
+
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+    <link rel="apple-touch-icon" href="/assets/images/logo/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/site.css?v=919a40c1">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Trang chủ",
+          "item": "https://sodientu.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Hướng dẫn",
+          "item": "https://sodientu.com/huong-dan"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Nhập danh sách sản phẩm hàng loạt từ Excel",
+          "item": "https://sodientu.com/huong-dan/nhap-san-pham-tu-excel"
+        }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Nhập danh sách sản phẩm hàng loạt từ Excel",
+      "description": "Hướng dẫn nhập sản phẩm hàng loạt từ Excel vào SoDi: lấy file mẫu, điền và làm sạch dữ liệu, nhập thử file nhỏ rồi kiểm tra, thay vì gõ tay từng món.",
+      "image": [
+        "https://sodientu.com/assets/images/hero/phone.png"
+      ],
+      "datePublished": "2026-11-20",
+      "dateModified": "2026-11-20",
+      "inLanguage": "vi",
+      "mainEntityOfPage": "https://sodientu.com/huong-dan/nhap-san-pham-tu-excel",
+      "author": {
+        "@type": "Organization",
+        "name": "SoDi",
+        "url": "https://sodientu.com/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "SoDi",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://sodientu.com/assets/images/logo/logo.png"
+        }
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Nhập Excel có ghi đè sản phẩm đang có không?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Hãy kiểm tra trong app trước khi nhập. An toàn nhất là nhập thử một file nhỏ vài dòng để xem SoDi xử lý thế nào, rồi mới nhập file đầy đủ."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Ảnh sản phẩm có nhập bằng Excel được không?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ảnh thường thêm sau, ngay trong app. Bạn chỉ cần thêm ảnh cho các món bán chạy, không cần làm hết một lúc."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Tôi có thể xuất dữ liệu ra Excel không?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Có. Các báo cáo của SoDi xuất được ra Excel để lưu trữ hoặc gửi kế toán."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16666143438"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'AW-16666143438');
+    </script>
+</head>
+<body>
+    <a class="skip-link" href="#noi-dung">Bỏ qua điều hướng</a>
+
+    <header class="header" id="header">
+        <div class="wrap header-bar">
+            <a class="brand" href="/" aria-label="Sodi - trang chủ">
+                <img src="/assets/images/logo/logo.png" alt="" width="36" height="36" class="brand-logo">
+                <span class="brand-name">Sodi</span>
+            </a>
+
+            <nav class="nav" id="nav" aria-label="Điều hướng chính">
+                <a class="nav-link" href="/#tinh-nang">Tính năng</a>
+                <a class="nav-link" href="/#nganh-hang">Ngành hàng</a>
+                <a class="nav-link" href="/huong-dan" aria-current="page">Hướng dẫn</a>
+                <a class="nav-link" href="/kien-thuc">Kiến thức</a>
+                <a class="nav-link" href="/#hoi-dap">Hỏi đáp</a>
+                <a class="btn btn-primary btn-sm nav-cta" href="#tai-ung-dung">Tải ứng dụng</a>
+            </nav>
+
+            <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="nav"
+                aria-label="Mở menu">
+                <span class="menu-bars" aria-hidden="true"></span>
+            </button>
+        </div>
+    </header>
+
+    <main id="noi-dung">
+        <article class="article">
+            <div class="wrap article-wrap">
+                <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Trang chủ</a></li><li><a href="/huong-dan">Hướng dẫn</a></li><li aria-current="page">Nhập danh sách sản phẩm hàng loạt từ Excel</li></ol></nav>
+                <header class="article-head">
+                    <p class="eyebrow">Hướng dẫn sử dụng</p>
+                    <h1 class="article-title">Nhập danh sách sản phẩm hàng loạt từ Excel</h1>
+                    <p class="article-lead">Có sẵn danh sách hàng trong Excel? Nhập một lần vào SoDi thay vì gõ tay từng món trên điện thoại.</p>
+                    <p class="article-meta">Cập nhật <time datetime="2026-11-20">20/11/2026</time> · SoDi</p>
+                </header>
+                <div class="prose">
+<!-- TODO: kiểm tra trong app: tên chức năng nhập Excel, file mẫu và các cột bắt buộc, rồi sửa bài cho khớp -->
+
+<p>Gõ tay vài chục món thì được, nhưng tiệm tạp hóa hay shop có vài trăm đến vài nghìn sản phẩm thì gõ trên điện thoại mất cả ngày. SoDi cho nhập danh sách sản phẩm hàng loạt từ file Excel. Bài này hướng dẫn cách chuẩn bị file để nhập một lần là đúng.</p>
+<h2>Khi nào nên nhập từ Excel</h2>
+<ul>
+<li>Bạn có trên khoảng 50 sản phẩm.</li>
+<li>Bạn đã có danh sách hàng trong Excel, Google Sheets, hoặc file từ nhà cung cấp.</li>
+<li>Bạn chuyển từ sổ sách hoặc phần mềm khác sang SoDi.</li>
+</ul>
+<p>Ít món hơn, thêm tay trong app sẽ nhanh hơn. Xem bài <a href="/huong-dan/bat-dau-voi-sodi">bắt đầu với SoDi</a>.</p>
+<h2>Bước 1: Lấy file mẫu</h2>
+<p>Trong phần nhập sản phẩm từ Excel của SoDi, dùng <strong>file mẫu</strong> mà app cung cấp. File mẫu có sẵn đúng tên cột và thứ tự cột mà SoDi đọc được. Đừng tự tạo file với tên cột khác.</p>
+<!-- TODO: ảnh màn hình chức năng nhập Excel và file mẫu -->
+
+<h2>Bước 2: Điền dữ liệu</h2>
+<p>Thông tin thường có cho mỗi sản phẩm:</p>
+<ul>
+<li><strong>Tên sản phẩm</strong> – ngắn gọn, dễ tìm. Ví dụ &quot;Sữa tươi TH 180ml&quot; thay vì &quot;sua tuoi&quot;.</li>
+<li><strong>Danh mục</strong> – ví dụ Sữa, Nước ngọt, Bánh kẹo, Cà phê.</li>
+<li><strong>Giá bán</strong> – chỉ ghi số, không ghi &quot;đ&quot; hay dấu chấm phân cách nếu file mẫu không yêu cầu.</li>
+<li><strong>Giá vốn</strong> – để báo cáo tính được lãi.</li>
+<li><strong>Mã vạch</strong> – nếu có, để quét bằng camera khi bán.</li>
+</ul>
+<p>Điền theo đúng các cột của file mẫu. Cột nào file mẫu không có thì bỏ qua, thêm sau trong app.</p>
+<h2>Bước 3: Làm sạch dữ liệu</h2>
+<p>Phần lớn lỗi khi nhập đến từ dữ liệu bẩn. Trước khi nhập, kiểm tra:</p>
+<ol>
+<li><strong>Không có dòng trống</strong> ở giữa danh sách.</li>
+<li><strong>Không trùng tên.</strong> Dùng chức năng lọc trùng của Excel.</li>
+<li><strong>Giá là số</strong>, không phải chữ. Ô giá căn phải thường là số, căn trái thường là chữ.</li>
+<li><strong>Mã vạch giữ đủ số.</strong> Excel hay tự đổi mã vạch dài thành dạng 8,93E+12. Định dạng cột mã vạch là <strong>Text</strong> trước khi dán.</li>
+<li><strong>Tên danh mục viết thống nhất.</strong> &quot;Nước ngọt&quot; và &quot;nuoc ngot&quot; sẽ thành hai danh mục khác nhau.</li>
+</ol>
+<p>Ví dụ minh họa:</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên sản phẩm</th>
+<th>Danh mục</th>
+<th>Giá bán</th>
+<th>Giá vốn</th>
+<th>Mã vạch</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Nước ngọt lon 330ml</td>
+<td>Nước ngọt</td>
+<td>10000</td>
+<td>7500</td>
+<td>8930000000001</td>
+</tr>
+<tr>
+<td>Mì gói tôm chua cay</td>
+<td>Mì, phở gói</td>
+<td>4500</td>
+<td>3600</td>
+<td>8930000000002</td>
+</tr>
+<tr>
+<td>Sữa tươi 180ml</td>
+<td>Sữa</td>
+<td>8000</td>
+<td>6300</td>
+<td>8930000000003</td>
+</tr>
+</tbody></table></div>
+<p>(Các mã vạch và giá trong bảng chỉ là ví dụ.)</p>
+<aside class="cta-box" aria-label="Tải ứng dụng SoDi">
+                    <p class="cta-box-title">Thử SoDi cho cửa hàng của bạn</p>
+                    <p class="cta-box-text">Miễn phí để bắt đầu. Cài trên điện thoại và tạo đơn đầu tiên trong vài phút.</p>
+                    <div class="store-row">
+                <a class="store-link" href="https://apps.apple.com/us/app/sodi-qu%E1%BA%A3n-l%C3%BD-b%C3%A1n-h%C3%A0ng/id6474116712" target="_blank" rel="noopener" aria-label="Tải SoDi trên App Store">
+                    <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Tải trên App Store" width="162" height="54" loading="lazy">
+                </a>
+                <a class="store-link" href="https://play.google.com/store/apps/details?id=com.buffchalo.sales_management" target="_blank" rel="noopener" aria-label="Tải SoDi trên Google Play">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Tải trên Google Play" width="182" height="54" loading="lazy">
+                </a>
+                    </div>
+                </aside>
+
+<h2>Bước 4: Nhập thử file nhỏ</h2>
+<p>Đừng nhập ngay file 2.000 dòng. Hãy:</p>
+<ol>
+<li>Copy 5–10 dòng đầu ra một file riêng.</li>
+<li>Nhập file nhỏ này vào SoDi.</li>
+<li>Mở app kiểm tra: tên, giá, danh mục, mã vạch có đúng không.</li>
+<li>Thử quét mã vạch một sản phẩm để chắc mã vạch được nhập đúng.</li>
+</ol>
+<p>Nếu đúng hết, nhập file đầy đủ.</p>
+<h2>Bước 5: Nhập file đầy đủ và kiểm tra lại</h2>
+<p>Sau khi nhập:</p>
+<ul>
+<li>Xem tổng số sản phẩm trong app có khớp số dòng trong file không.</li>
+<li>Mở ngẫu nhiên vài sản phẩm ở đầu, giữa và cuối danh sách.</li>
+<li>Thêm size, thuộc tính, combo, giá sỉ, đơn vị quy đổi cho các món cần (làm trong app).</li>
+<li>Thêm ảnh cho các món bán chạy.</li>
+</ul>
+<h2>Sau khi nhập: đưa tồn kho vào</h2>
+<p>Danh sách sản phẩm chỉ là &quot;món gì, giá bao nhiêu&quot;. Để có số tồn, tạo <strong>phiếu nhập kho</strong> với số lượng hiện có. Xem bài <a href="/huong-dan/quan-ly-kho-hang">nhập kho, xuất kho, kiểm kho</a>.</p>
+<h2>Mẹo cho tiệm tạp hóa</h2>
+<ul>
+<li>Lấy file danh sách từ nhà cung cấp, thường đã có tên và mã vạch.</li>
+<li>Chia danh mục theo kệ trong tiệm để vừa dễ bán vừa dễ kiểm kho.</li>
+<li>Hàng bán theo thùng, lốc, lon: nhập sản phẩm theo đơn vị bán lẻ, rồi khai báo đơn vị quy đổi trong app.</li>
+</ul>
+<p>Xem thêm <a href="/nganh/phan-mem-quan-ly-tap-hoa">phần mềm quản lý tạp hóa</a>.</p>
+
+                </div>
+                <section class="article-faq" aria-labelledby="faq-title">
+                    <h2 id="faq-title">Câu hỏi thường gặp</h2>
+                    <details class="qa">
+                        <summary>Nhập Excel có ghi đè sản phẩm đang có không?</summary>
+                        <p>Hãy kiểm tra trong app trước khi nhập. An toàn nhất là nhập thử một file nhỏ vài dòng để xem SoDi xử lý thế nào, rồi mới nhập file đầy đủ.</p>
+                    </details>
+                    <details class="qa">
+                        <summary>Ảnh sản phẩm có nhập bằng Excel được không?</summary>
+                        <p>Ảnh thường thêm sau, ngay trong app. Bạn chỉ cần thêm ảnh cho các món bán chạy, không cần làm hết một lúc.</p>
+                    </details>
+                    <details class="qa">
+                        <summary>Tôi có thể xuất dữ liệu ra Excel không?</summary>
+                        <p>Có. Các báo cáo của SoDi xuất được ra Excel để lưu trữ hoặc gửi kế toán.</p>
+                    </details>
+                </section>
+                <section class="related" aria-labelledby="related-title">
+                    <h2 id="related-title" class="related-title">Bài liên quan</h2>
+                    <ul class="post-grid">
+                    <li class="post-card">
+                        <a href="/huong-dan/quan-ly-kho-hang">
+                            <span class="post-card-kicker">Hướng dẫn</span>
+                            <h3 class="post-card-title">Nhập kho, xuất kho, kiểm kho và theo dõi tồn kho</h3>
+                            <p>Hướng dẫn quản lý kho hàng bằng SoDi: phiếu nhập kho, nhà cung cấp, xuất kho, kiểm kho, theo dõi tồn và giá trị tồn, lô hàng và hạn sử dụng trên điện thoại.</p>
+                            <span class="post-card-more">Đọc tiếp</span>
+                        </a>
+                    </li>
+                    <li class="post-card">
+                        <a href="/nganh/phan-mem-quan-ly-tap-hoa">
+                            <span class="post-card-kicker">Ngành hàng</span>
+                            <h3 class="post-card-title">Phần mềm quản lý tạp hóa trên điện thoại</h3>
+                            <p>Phần mềm quản lý tạp hóa SoDi: quét mã vạch bằng camera, giá sỉ và giá lẻ, đơn vị thùng lốc lon, sổ nợ khách quen, theo dõi hạn sử dụng theo lô.</p>
+                            <span class="post-card-more">Đọc tiếp</span>
+                        </a>
+                    </li>
+                    <li class="post-card">
+                        <a href="/huong-dan/bat-dau-voi-sodi">
+                            <span class="post-card-kicker">Hướng dẫn</span>
+                            <h3 class="post-card-title">Bắt đầu với SoDi trong 1 phút: đăng ký và dùng cửa hàng mẫu</h3>
+                            <p>Hướng dẫn bắt đầu với phần mềm bán hàng SoDi. Tải app, đăng ký bằng tên quán và số điện thoại, chọn cửa hàng mẫu cafe, quán cơm hoặc tạp hóa để bán thử ngay.</p>
+                            <span class="post-card-more">Đọc tiếp</span>
+                        </a>
+                    </li>
+                    </ul>
+                </section>
+            </div>
+        </article>
+
+        <section class="closing" id="tai-ung-dung">
+            <div class="wrap closing-inner">
+                <h2 class="closing-title">Sẵn sàng quản lý cửa hàng gọn hơn?</h2>
+                <p class="closing-lead">Tải SoDi ngay hôm nay. Miễn phí để bắt đầu, không cần thẻ thanh toán.</p>
+                <div class="store-row store-row-center">
+                <a class="store-link" href="https://apps.apple.com/us/app/sodi-qu%E1%BA%A3n-l%C3%BD-b%C3%A1n-h%C3%A0ng/id6474116712" target="_blank" rel="noopener" aria-label="Tải SoDi trên App Store">
+                    <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Tải trên App Store" width="162" height="54" loading="lazy">
+                </a>
+                <a class="store-link" href="https://play.google.com/store/apps/details?id=com.buffchalo.sales_management" target="_blank" rel="noopener" aria-label="Tải SoDi trên Google Play">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Tải trên Google Play" width="182" height="54" loading="lazy">
+                </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="wrap footer-grid">
+            <div class="footer-brand">
+                <a class="brand" href="/" aria-label="Sodi - trang chủ">
+                    <img src="/assets/images/logo/logo.png" alt="" width="32" height="32" class="brand-logo" loading="lazy">
+                    <span class="brand-name">Sodi</span>
+                </a>
+                <p>Phần mềm quản lý bán hàng, kho hàng và hóa đơn trên điện thoại cho chủ shop và quán cafe.</p>
+            </div>
+            <div class="footer-col">
+                <h2 class="footer-h">Sản phẩm</h2>
+                <a href="/#tinh-nang">Tính năng</a>
+                <a href="/#hoi-dap">Hỏi đáp</a>
+                <a href="/huong-dan">Hướng dẫn</a>
+                <a href="/kien-thuc">Kiến thức</a>
+            </div>
+            <div class="footer-col">
+                <h2 class="footer-h">Ngành hàng</h2>
+                <a href="/nganh/phan-mem-quan-ly-quan-cafe">Quán cafe, trà sữa</a>
+                <a href="/nganh/phan-mem-quan-ly-quan-an">Quán ăn</a>
+                <a href="/nganh/phan-mem-quan-ly-tap-hoa">Tạp hóa</a>
+                <a href="/nganh/phan-mem-quan-ly-cho-thue">Cho thuê</a>
+            </div>
+            <div class="footer-col">
+                <h2 class="footer-h">Tải ứng dụng</h2>
+                <a href="https://apps.apple.com/us/app/sodi-qu%E1%BA%A3n-l%C3%BD-b%C3%A1n-h%C3%A0ng/id6474116712" target="_blank" rel="noopener">App Store</a>
+                <a href="https://play.google.com/store/apps/details?id=com.buffchalo.sales_management" target="_blank" rel="noopener">Google Play</a>
+            </div>
+            <div class="footer-col">
+                <h2 class="footer-h">Liên hệ</h2>
+                <a href="mailto:support@sodientu.com">support@sodientu.com</a>
+                <a href="https://facebook.com/soquanlydientu" target="_blank" rel="noopener">Facebook</a>
+                <a href="https://youtube.com/@SoDiPos" target="_blank" rel="noopener">YouTube</a>
+            </div>
+        </div>
+        <div class="wrap footer-base">
+            <p>© <span id="year">2026</span> Sodi Quản lý bán hàng. <a href="/privacy-policy.html">Chính sách bảo mật</a> · <a href="/terms-of-service.html">Điều khoản</a></p>
+        </div>
+    </footer>
+
+    <script src="/assets/js/site.js?v=dfeb4e74" defer></script>
+</body>
+
+</html>

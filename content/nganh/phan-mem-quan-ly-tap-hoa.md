@@ -42,15 +42,13 @@ SoDi chạy ngay trên điện thoại Android hoặc iPhone. Không cần máy 
 
 Mỗi sản phẩm có giá lẻ và giá sỉ. Bạn khai báo đơn vị quy đổi, ví dụ **1 thùng = 4 lốc = 24 lon**. Bán lẻ 1 lon hay bán cả thùng, tồn kho đều tự trừ đúng số lon.
 
-<!-- TODO: chờ xác nhận bán theo thùng thì tồn kho trừ theo lon như ví dụ dưới -->
-
 Ví dụ minh họa: giả sử nước ngọt có giá lẻ 10.000đ/lon, giá sỉ 210.000đ/thùng 24 lon. Khách mua 3 lon, bạn bán giá lẻ. Khách lấy 2 thùng, bạn bán giá sỉ. Cuối ngày kho trừ đúng 51 lon.
 
 Sản phẩm có thể có nhiều thuộc tính, hình ảnh, danh mục, và bán theo combo (ví dụ combo mì gói + trứng).
 
 ### Nhập hàng hàng loạt từ Excel
 
-Tiệm có sẵn danh sách hàng trong file Excel thì nhập một lần vào SoDi. Sau đó dùng **phiếu nhập kho** mỗi lần lấy hàng: ghi nhà cung cấp, số lượng, giá nhập. Tồn kho tự cộng khi nhập, tự trừ khi bán.
+Tiệm có sẵn danh sách hàng trong file Excel thì nhập một lần vào SoDi (xem [hướng dẫn nhập từ Excel](/huong-dan/nhap-san-pham-tu-excel)). Sau đó dùng **phiếu nhập kho** mỗi lần lấy hàng: ghi nhà cung cấp, số lượng, giá nhập. Tồn kho tự cộng khi nhập, tự trừ khi bán. Xem [nhập kho, xuất kho, kiểm kho](/huong-dan/quan-ly-kho-hang).
 
 <!-- cta -->
 
@@ -60,7 +58,7 @@ Sữa, bánh, đồ hộp nhập theo từng lô với hạn sử dụng riêng.
 
 ### Sổ nợ khách quen và nhà cung cấp
 
-Khách mua nợ, bạn ghi vào sổ nợ của khách đó. Khách trả bớt một phần, ghi tiếp. Mở tên khách là thấy còn nợ bao nhiêu và lịch sử từng lần. Sổ nợ cũng ghi được tiền bạn còn nợ nhà cung cấp.
+Khách mua nợ, bạn ghi vào sổ nợ của khách đó. Khách trả bớt một phần, ghi tiếp. Mở tên khách là thấy còn nợ bao nhiêu và lịch sử từng lần. Sổ nợ cũng ghi được tiền bạn còn nợ nhà cung cấp. Xem [ghi nợ và thu nợ bằng sổ nợ](/huong-dan/so-no-cong-no-khach-hang) và bài [cách quản lý công nợ khách hàng](/kien-thuc/cach-quan-ly-cong-no-khach-hang).
 
 ### Khách hàng thân thiết
 

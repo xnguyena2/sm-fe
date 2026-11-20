@@ -39,7 +39,7 @@ Chia quán thành khu vực (trong nhà, ngoài sân, phòng lạnh…) và đá
 
 ### Gửi món xuống bếp bằng phiếu in
 
-Nhân viên tạo đơn xong thì in **phiếu bếp** ra máy in đặt trong bếp. Ghi chú như "không hành", "ít cay" đi kèm từng món. Bếp đọc phiếu, không cần chạy ra hỏi lại.
+Nhân viên tạo đơn xong thì in **phiếu bếp** ra máy in đặt trong bếp. Ghi chú như "không hành", "ít cay" đi kèm từng món. Bếp đọc phiếu, không cần chạy ra hỏi lại. Cách cài máy in xem trong bài [kết nối máy in hóa đơn, phiếu bếp](/huong-dan/ket-noi-may-in-hoa-don).
 
 ### Tại quán, mang đi và app giao đồ ăn
 
@@ -72,6 +72,8 @@ Tạo tài khoản cho phục vụ, thu ngân, bếp, mỗi người một quy�
 - So sánh lãi với cùng thứ tuần trước.
 - Đơn hủy, đơn trả, thu chi ngoài đơn hàng (tiền gas, tiền chợ…).
 - Xuất Excel để gửi kế toán hoặc lưu trữ.
+
+Xem [cách đọc báo cáo doanh thu, lợi nhuận](/huong-dan/bao-cao-doanh-thu-loi-nhuan) và bài [cách tính lợi nhuận quán ăn](/kien-thuc/cach-tinh-loi-nhuan-quan-an).
 
 ## Ví dụ: một bàn bốn người
 

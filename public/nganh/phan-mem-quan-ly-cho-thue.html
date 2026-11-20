@@ -26,7 +26,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/css/site.css?v=d2756e64">
+    <link rel="stylesheet" href="/assets/css/site.css?v=919a40c1">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -65,7 +65,7 @@
           "name": "Khách trả trễ thì phần mềm có báo không?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "SoDi theo dõi các đơn thuê đang mở và cho bạn thấy đơn nào đã quá hạn để liên hệ khách."
+            "text": "SoDi theo dõi các đơn thuê đang mở và cho bạn thấy đơn nào đã quá hạn để liên hệ khách. Khi khách trả trễ, tiền thuê được tính thêm theo chu kỳ tiếp theo (thêm 1 giờ, 1 ngày hoặc 1 tháng tùy cách tính của đơn)."
           }
         },
         {
@@ -145,9 +145,7 @@
 <h2>SoDi giúp gì cho cửa hàng cho thuê</h2>
 <h3>Tính tiền thuê theo giờ, ngày, tháng</h3>
 <p>Khi tạo đơn thuê, bạn chọn cách tính: <strong>theo giờ</strong>, <strong>theo ngày</strong> hoặc <strong>theo tháng</strong>. SoDi tự tính tiền thuê dựa trên thời gian, bạn không phải bấm máy tính.</p>
-<p>Ví dụ minh họa: giả sử bạn cho thuê máy ảnh 150.000đ/ngày. Khách thuê 3 ngày, tiền thuê là 450.000đ. Khách trả trễ thêm 1 ngày, đơn được tính thêm theo cùng đơn giá.</p>
-<!-- TODO: chờ xác nhận cách SoDi tính tiền khi khách trả trễ (tính thêm theo đơn giá hay theo phí riêng) -->
-
+<p>Ví dụ minh họa: giả sử bạn cho thuê máy ảnh 150.000đ/ngày. Khách thuê 3 ngày, tiền thuê là 450.000đ. Nếu khách trả trễ, SoDi tính thêm theo chu kỳ tiếp theo: trễ sang ngày thứ 4 thì đơn tính thêm 1 ngày, tổng 600.000đ. Thuê theo giờ thì trễ sang giờ kế tiếp được tính thêm 1 giờ.</p>
 <h3>Theo dõi đơn đang thuê và đơn quá hạn</h3>
 <p>Danh sách đơn cho thấy đơn nào đang thuê, đơn nào đã trả, đơn nào quá hạn. Danh sách có bộ lọc và tìm kiếm, nên tìm lại khách hay đơn cũ rất nhanh. Nhìn vào là biết hôm nay cần gọi nhắc ai.</p>
 <aside class="cta-box" aria-label="Tải ứng dụng SoDi">
@@ -164,7 +162,7 @@
                 </aside>
 
 <h3>Công nợ và thu tiền từng phần</h3>
-<p>Khách đặt cọc hoặc trả trước một phần, phần còn thiếu ghi vào sổ nợ của khách. Khách trả thêm lần nào ghi lần đó. Mở tên khách là thấy lịch sử thuê, lịch sử trả tiền và số còn nợ.</p>
+<p>Khách đặt cọc hoặc trả trước một phần, phần còn thiếu ghi vào sổ nợ của khách. Khách trả thêm lần nào ghi lần đó. Mở tên khách là thấy lịch sử thuê, lịch sử trả tiền và số còn nợ. Xem <a href="/huong-dan/so-no-cong-no-khach-hang">ghi nợ và thu nợ bằng sổ nợ</a>.</p>
 <h3>Thu tiền mặt hoặc chuyển khoản QR</h3>
 <p>Mỗi đơn có mã VietQR để khách chuyển khoản. Khi kết nối ngân hàng qua SePay, đơn tự xác nhận khi tiền về. Xem <a href="/huong-dan/thanh-toan-qr-chuyen-khoan">hướng dẫn thanh toán QR</a>.</p>
 <h3>In phiếu và hóa đơn</h3>
@@ -200,7 +198,7 @@
                     </details>
                     <details class="qa">
                         <summary>Khách trả trễ thì phần mềm có báo không?</summary>
-                        <p>SoDi theo dõi các đơn thuê đang mở và cho bạn thấy đơn nào đã quá hạn để liên hệ khách.</p>
+                        <p>SoDi theo dõi các đơn thuê đang mở và cho bạn thấy đơn nào đã quá hạn để liên hệ khách. Khi khách trả trễ, tiền thuê được tính thêm theo chu kỳ tiếp theo (thêm 1 giờ, 1 ngày hoặc 1 tháng tùy cách tính của đơn).</p>
                     </details>
                     <details class="qa">
                         <summary>Khách đặt cọc rồi trả phần còn lại sau thì ghi thế nào?</summary>
@@ -295,7 +293,7 @@
         </div>
     </footer>
 
-    <script src="/assets/js/site.js?v=340e467a" defer></script>
+    <script src="/assets/js/site.js?v=dfeb4e74" defer></script>
 </body>
 
 </html>

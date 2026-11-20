@@ -61,13 +61,13 @@ Muốn tự tính tay trước? Đọc bài [cách tính giá vốn một ly cà
 
 ### Mở ca, chốt ca và đếm ly theo ca
 
-Đầu ca, nhân viên nhập tiền đầu ca. Cuối ca, nhân viên đếm tiền két, SoDi so với số tiền lẽ ra phải có và ghi lại khoản lệch, ai là người chốt. Bạn xem lại được lịch sử chốt ca bất cứ lúc nào.
+Đầu ca, nhân viên nhập tiền đầu ca. Cuối ca, nhân viên đếm tiền két, SoDi so với số tiền lẽ ra phải có và ghi lại khoản lệch, ai là người chốt. Bạn xem lại được lịch sử chốt ca bất cứ lúc nào. Xem hướng dẫn [mở ca, chốt ca](/huong-dan/mo-ca-chot-ca) và bài [chống thất thoát khi giao ca](/kien-thuc/chong-that-thoat-khi-giao-ca).
 
 Quán cũng có thể bật **đếm hàng theo ca**, ví dụ đếm số ly M và ly L còn lại. Thêm **checklist đầu ca và cuối ca** (lau máy, kiểm tra đá, tắt điện…) để nhân viên mới không quên việc.
 
 ### Nhân viên, lịch ca và chấm công
 
-Mỗi nhân viên có tài khoản riêng, đăng nhập bằng mã hoặc quét QR. Bạn phân quyền từng việc, ví dụ nhân viên được bán hàng nhưng không được hủy đơn. SoDi có xếp lịch ca, chấm công vào ra, đánh dấu đi trễ và tính lương theo công.
+Mỗi nhân viên có tài khoản riêng, đăng nhập bằng mã hoặc quét QR. Bạn phân quyền từng việc, ví dụ nhân viên được bán hàng nhưng không được hủy đơn. SoDi có xếp lịch ca, chấm công vào ra, đánh dấu đi trễ và tính lương theo công. Xem [tạo tài khoản nhân viên và phân quyền](/huong-dan/nhan-vien-phan-quyen).
 
 ### Báo cáo để biết giờ nào đông, món nào lãi
 
@@ -79,7 +79,7 @@ Mỗi nhân viên có tài khoản riêng, đăng nhập bằng mã hoặc quét
 
 ### Bán online với menu QR
 
-SoDi tạo website bán hàng riêng cho quán, menu tự lấy từ app. In mã QR dán ở bàn hoặc đăng lên trang Facebook để khách xem menu và đặt món. Đơn từ web có thông báo về app.
+SoDi tạo website bán hàng riêng cho quán, menu tự lấy từ app. In mã QR dán ở bàn hoặc đăng lên trang Facebook để khách xem menu và đặt món. Đơn từ web có thông báo về app. Xem [tạo website bán hàng và mã QR menu](/huong-dan/website-ban-hang-qr-menu).
 
 ## Một ngày ở quán với SoDi
 

@@ -560,15 +560,44 @@ ${closing()}    </main>
 }
 
 // ---------------------------------------------------------------------------
-// Home page: only bump the asset versions (the page itself is edited by hand)
+// Home page: the page is edited by hand. The build only bumps the asset
+// versions and fills the "Bài viết mới" block between
+// <!-- latest-posts:start --> and <!-- latest-posts:end -->.
 // ---------------------------------------------------------------------------
 
 {
   const f = path.join(PUBLIC, 'index.html');
   const before = fs.readFileSync(f, 'utf8');
-  const after = before
+  let after = before
     .replace(/assets\/css\/site\.css(\?v=\w+)?"/, `assets/css/site.css?v=${CSS_V}"`)
     .replace(/assets\/js\/site\.js(\?v=\w+)?"/, `assets/js/site.js?v=${JS_V}"`);
+
+  const START = '<!-- latest-posts:start -->';
+  const END = '<!-- latest-posts:end -->';
+  const a = after.indexOf(START);
+  const b = after.indexOf(END);
+  if (a === -1 || b === -1 || b < a) {
+    warnings.push('public/index.html: không thấy cặp comment latest-posts, bỏ qua khối "Bài viết mới"');
+  } else {
+    const latest = pages.filter((p) => p.collection === 'kien-thuc')
+      .sort((x, y) => y.datePublished.localeCompare(x.datePublished) || y.dateModified.localeCompare(x.dateModified) || x.title.localeCompare(y.title, 'vi'))
+      .slice(0, 3);
+    const block = latest.length ? `
+        <section class="section section-tint latest" aria-labelledby="bai-viet-moi">
+            <div class="wrap">
+                <div class="center-head">
+                    <h2 class="h2" id="bai-viet-moi">Bài viết mới</h2>
+                    <p class="section-lead">Kinh nghiệm quản lý bán hàng cho chủ quán, chủ shop nhỏ.</p>
+                </div>
+                <ul class="post-grid">
+                    ${latest.map((p) => card(p, 'h3')).join('\n                    ')}
+                </ul>
+                <p class="latest-more"><a class="text-link" href="/kien-thuc">Xem tất cả bài viết</a></p>
+            </div>
+        </section>
+        ` : '\n        ';
+    after = after.slice(0, a + START.length) + block + after.slice(b);
+  }
   if (after !== before) fs.writeFileSync(f, after);
 }
 

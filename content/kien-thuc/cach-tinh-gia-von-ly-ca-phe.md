@@ -105,7 +105,7 @@ Hao hụt là phần dễ bị bỏ qua nhất. Cách ước lượng đơn gi�
 2. Đếm số ly đã bán trong tuần đó theo từng món, nhân với định lượng để ra lượng cà phê lẽ ra phải dùng, ví dụ 4,7 kg.
 3. Chênh lệch 0,3 kg trên 5 kg là khoảng 6% hao hụt.
 
-Nếu hao hụt cao bất thường (trên 10%), nên xem lại cách pha, cách bảo quản, hoặc việc giao ca. Bài về chống thất thoát khi giao ca sẽ có trong thời gian tới.
+Nếu hao hụt cao bất thường (trên 10%), nên xem lại cách pha, cách bảo quản, hoặc việc giao ca. Xem thêm bài [chống thất thoát khi giao ca](/kien-thuc/chong-that-thoat-khi-giao-ca).
 
 ## Bước 5: Từ giá vốn ra giá bán
 

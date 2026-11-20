@@ -15,7 +15,7 @@ faq:
   - q: SoDi phù hợp với loại hình cho thuê nào?
     a: Các dịch vụ tính tiền theo thời gian như cho thuê đồ, thiết bị, trang phục, phòng hoặc dụng cụ. Bạn chọn cách tính theo giờ, theo ngày hoặc theo tháng cho từng đơn.
   - q: Khách trả trễ thì phần mềm có báo không?
-    a: SoDi theo dõi các đơn thuê đang mở và cho bạn thấy đơn nào đã quá hạn để liên hệ khách.
+    a: SoDi theo dõi các đơn thuê đang mở và cho bạn thấy đơn nào đã quá hạn để liên hệ khách. Khi khách trả trễ, tiền thuê được tính thêm theo chu kỳ tiếp theo (thêm 1 giờ, 1 ngày hoặc 1 tháng tùy cách tính của đơn).
   - q: Khách đặt cọc rồi trả phần còn lại sau thì ghi thế nào?
     a: Bạn ghi phần khách còn thiếu vào sổ nợ của khách đó. Khi khách trả, ghi thu nợ từng phần cho đến khi hết nợ.
 ---
@@ -45,9 +45,7 @@ SoDi có chế độ cho thuê ngay trong ứng dụng bán hàng. Bạn dùng t
 
 Khi tạo đơn thuê, bạn chọn cách tính: **theo giờ**, **theo ngày** hoặc **theo tháng**. SoDi tự tính tiền thuê dựa trên thời gian, bạn không phải bấm máy tính.
 
-Ví dụ minh họa: giả sử bạn cho thuê máy ảnh 150.000đ/ngày. Khách thuê 3 ngày, tiền thuê là 450.000đ. Khách trả trễ thêm 1 ngày, đơn được tính thêm theo cùng đơn giá.
-
-<!-- TODO: chờ xác nhận cách SoDi tính tiền khi khách trả trễ (tính thêm theo đơn giá hay theo phí riêng) -->
+Ví dụ minh họa: giả sử bạn cho thuê máy ảnh 150.000đ/ngày. Khách thuê 3 ngày, tiền thuê là 450.000đ. Nếu khách trả trễ, SoDi tính thêm theo chu kỳ tiếp theo: trễ sang ngày thứ 4 thì đơn tính thêm 1 ngày, tổng 600.000đ. Thuê theo giờ thì trễ sang giờ kế tiếp được tính thêm 1 giờ.
 
 ### Theo dõi đơn đang thuê và đơn quá hạn
 
@@ -57,7 +55,7 @@ Danh sách đơn cho thấy đơn nào đang thuê, đơn nào đã trả, đơn
 
 ### Công nợ và thu tiền từng phần
 
-Khách đặt cọc hoặc trả trước một phần, phần còn thiếu ghi vào sổ nợ của khách. Khách trả thêm lần nào ghi lần đó. Mở tên khách là thấy lịch sử thuê, lịch sử trả tiền và số còn nợ.
+Khách đặt cọc hoặc trả trước một phần, phần còn thiếu ghi vào sổ nợ của khách. Khách trả thêm lần nào ghi lần đó. Mở tên khách là thấy lịch sử thuê, lịch sử trả tiền và số còn nợ. Xem [ghi nợ và thu nợ bằng sổ nợ](/huong-dan/so-no-cong-no-khach-hang).
 
 ### Thu tiền mặt hoặc chuyển khoản QR
 

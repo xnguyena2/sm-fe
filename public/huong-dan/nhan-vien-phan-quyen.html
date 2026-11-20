@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tạo tài khoản nhân viên và phân quyền trên SoDi | SoDi</title>
+    <meta name="description" content="Hướng dẫn tạo tài khoản nhân viên trên SoDi: phân quyền từng việc, đăng nhập bằng mã hoặc QR, giới hạn giảm giá, hủy đơn, xếp ca, chấm công và tính lương.">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0E7C66">
+    <link rel="canonical" href="https://sodientu.com/huong-dan/nhan-vien-phan-quyen">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://sodientu.com/huong-dan/nhan-vien-phan-quyen">
+    <meta property="og:title" content="Tạo tài khoản nhân viên và phân quyền trên SoDi | SoDi">
+    <meta property="og:description" content="Hướng dẫn tạo tài khoản nhân viên trên SoDi: phân quyền từng việc, đăng nhập bằng mã hoặc QR, giới hạn giảm giá, hủy đơn, xếp ca, chấm công và tính lương.">
+    <meta property="og:image" content="https://sodientu.com/assets/images/hero/phone.png">
+    <meta property="og:locale" content="vi_VN">
+    <meta property="og:site_name" content="SoDi">
+    <meta property="article:published_time" content="2026-11-20">
+    <meta property="article:modified_time" content="2026-11-20">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Tạo tài khoản nhân viên và phân quyền trên SoDi | SoDi">
+    <meta name="twitter:description" content="Hướng dẫn tạo tài khoản nhân viên trên SoDi: phân quyền từng việc, đăng nhập bằng mã hoặc QR, giới hạn giảm giá, hủy đơn, xếp ca, chấm công và tính lương.">
+    <meta name="twitter:image" content="https://sodientu.com/assets/images/hero/phone.png">
+
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+    <link rel="apple-touch-icon" href="/assets/images/logo/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/site.css?v=919a40c1">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Trang chủ",
+          "item": "https://sodientu.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Hướng dẫn",
+          "item": "https://sodientu.com/huong-dan"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Tạo tài khoản nhân viên và phân quyền",
+          "item": "https://sodientu.com/huong-dan/nhan-vien-phan-quyen"
+        }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Tạo tài khoản nhân viên và phân quyền",
+      "description": "Hướng dẫn tạo tài khoản nhân viên trên SoDi: phân quyền từng việc, đăng nhập bằng mã hoặc QR, giới hạn giảm giá, hủy đơn, xếp ca, chấm công và tính lương.",
+      "image": [
+        "https://sodientu.com/assets/images/hero/phone.png"
+      ],
+      "datePublished": "2026-11-20",
+      "dateModified": "2026-11-20",
+      "inLanguage": "vi",
+      "mainEntityOfPage": "https://sodientu.com/huong-dan/nhan-vien-phan-quyen",
+      "author": {
+        "@type": "Organization",
+        "name": "SoDi",
+        "url": "https://sodientu.com/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "SoDi",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://sodientu.com/assets/images/logo/logo.png"
+        }
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Nhân viên có cần tải app riêng không?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nhân viên dùng cùng ứng dụng SoDi, đăng nhập vào cửa hàng của bạn bằng mã hoặc quét QR. Có thể dùng trên máy riêng của nhân viên hoặc máy chung ở quầy."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Nhân viên nghỉ việc thì làm sao?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Xóa hoặc tắt quyền của tài khoản nhân viên đó ngay hôm nghỉ để họ không vào được cửa hàng nữa."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Chủ có biết khi nhân viên hủy đơn không?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SoDi có thể báo cho chủ khi nhân viên giảm giá vượt mức hoặc hủy đơn."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16666143438"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'AW-16666143438');
+    </script>
+</head>
+<body>
+    <a class="skip-link" href="#noi-dung">Bỏ qua điều hướng</a>
+
+    <header class="header" id="header">
+        <div class="wrap header-bar">
+            <a class="brand" href="/" aria-label="Sodi - trang chủ">
+                <img src="/assets/images/logo/logo.png" alt="" width="36" height="36" class="brand-logo">
+                <span class="brand-name">Sodi</span>
+            </a>
+
+            <nav class="nav" id="nav" aria-label="Điều hướng chính">
+                <a class="nav-link" href="/#tinh-nang">Tính năng</a>
+                <a class="nav-link" href="/#nganh-hang">Ngành hàng</a>
+                <a class="nav-link" href="/huong-dan" aria-current="page">Hướng dẫn</a>
+                <a class="nav-link" href="/kien-thuc">Kiến thức</a>
+                <a class="nav-link" href="/#hoi-dap">Hỏi đáp</a>
+                <a class="btn btn-primary btn-sm nav-cta" href="#tai-ung-dung">Tải ứng dụng</a>
+            </nav>
+
+            <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="nav"
+                aria-label="Mở menu">
+                <span class="menu-bars" aria-hidden="true"></span>
+            </button>
+        </div>
+    </header>
+
+    <main id="noi-dung">
+        <article class="article">
+            <div class="wrap article-wrap">
+                <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Trang chủ</a></li><li><a href="/huong-dan">Hướng dẫn</a></li><li aria-current="page">Tạo tài khoản nhân viên và phân quyền</li></ol></nav>
+                <header class="article-head">
+                    <p class="eyebrow">Hướng dẫn sử dụng</p>
+                    <h1 class="article-title">Tạo tài khoản nhân viên và phân quyền</h1>
+                    <p class="article-lead">Mỗi nhân viên một tài khoản, chỉ làm được việc bạn cho phép. Đăng nhập bằng mã hoặc QR, có lịch ca, chấm công và lương.</p>
+                    <p class="article-meta">Cập nhật <time datetime="2026-11-20">20/11/2026</time> · SoDi</p>
+                </header>
+                <div class="prose">
+<!-- TODO: kiểm tra lại tên quyền, tên nút và màn hình nhân viên trong app trước khi deploy -->
+
+<p>Khi quán có nhân viên, bạn cần hai thứ: nhân viên làm việc được ngay, và bạn vẫn kiểm soát được tiền, giảm giá, hủy đơn. SoDi cho mỗi nhân viên một tài khoản và phân quyền từng việc.</p>
+<h2>Vì sao không nên dùng chung một tài khoản</h2>
+<ul>
+<li>Có sai sót thì không biết ai làm.</li>
+<li>Nhân viên thấy được báo cáo lãi, giá vốn, những thứ bạn muốn giữ riêng.</li>
+<li>Nhân viên nghỉ việc vẫn đăng nhập được nếu biết mật khẩu chung.</li>
+</ul>
+<h2>Bước 1: Tạo tài khoản nhân viên</h2>
+<ol>
+<li>Vào phần nhân viên của cửa hàng.</li>
+<li>Thêm nhân viên mới: tên, số điện thoại.</li>
+<li>Chọn nhóm quyền hoặc tích từng quyền (bước 2).</li>
+<li>Lưu. Nhân viên nhận mã đăng nhập hoặc mã QR.</li>
+</ol>
+<!-- TODO: ảnh màn hình thêm nhân viên -->
+
+<h2>Bước 2: Phân quyền từng việc</h2>
+<p>Phân quyền theo nguyên tắc: <strong>cho đủ để làm việc, không cho thừa</strong>. Một gợi ý (ví dụ minh họa):</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Việc</th>
+<th>Thu ngân</th>
+<th>Phục vụ</th>
+<th>Quản lý ca</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Tạo đơn, thêm món</td>
+<td>Có</td>
+<td>Có</td>
+<td>Có</td>
+</tr>
+<tr>
+<td>Thu tiền</td>
+<td>Có</td>
+<td>Không</td>
+<td>Có</td>
+</tr>
+<tr>
+<td>Giảm giá</td>
+<td>Có giới hạn</td>
+<td>Không</td>
+<td>Có</td>
+</tr>
+<tr>
+<td>Hủy, trả đơn</td>
+<td>Không</td>
+<td>Không</td>
+<td>Có</td>
+</tr>
+<tr>
+<td>Ghi nợ khách</td>
+<td>Không</td>
+<td>Không</td>
+<td>Có</td>
+</tr>
+<tr>
+<td>Nhập kho</td>
+<td>Không</td>
+<td>Không</td>
+<td>Có</td>
+</tr>
+<tr>
+<td>Xem báo cáo lãi</td>
+<td>Không</td>
+<td>Không</td>
+<td>Tùy chủ</td>
+</tr>
+</tbody></table></div>
+<p>SoDi cho bạn:</p>
+<ul>
+<li><strong>Giới hạn giảm giá</strong> của nhân viên.</li>
+<li><strong>Cho phép hoặc không cho phép trả và hủy đơn.</strong></li>
+<li><strong>Báo ngay cho chủ</strong> khi giảm giá vượt mức hoặc có đơn bị hủy.</li>
+</ul>
+<h2>Bước 3: Nhân viên đăng nhập</h2>
+<p>Nhân viên mở SoDi trên máy của mình hoặc máy ở quầy và đăng nhập bằng <strong>mã</strong> hoặc <strong>quét QR</strong> cửa hàng. Không cần nhớ mật khẩu dài.</p>
+<p>Máy chung ở quầy: mỗi ca, nhân viên đăng nhập bằng tài khoản của mình, không dùng chung tài khoản của người khác.</p>
+<aside class="cta-box" aria-label="Tải ứng dụng SoDi">
+                    <p class="cta-box-title">Thử SoDi cho cửa hàng của bạn</p>
+                    <p class="cta-box-text">Miễn phí để bắt đầu. Cài trên điện thoại và tạo đơn đầu tiên trong vài phút.</p>
+                    <div class="store-row">
+                <a class="store-link" href="https://apps.apple.com/us/app/sodi-qu%E1%BA%A3n-l%C3%BD-b%C3%A1n-h%C3%A0ng/id6474116712" target="_blank" rel="noopener" aria-label="Tải SoDi trên App Store">
+                    <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Tải trên App Store" width="162" height="54" loading="lazy">
+                </a>
+                <a class="store-link" href="https://play.google.com/store/apps/details?id=com.buffchalo.sales_management" target="_blank" rel="noopener" aria-label="Tải SoDi trên Google Play">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Tải trên Google Play" width="182" height="54" loading="lazy">
+                </a>
+                    </div>
+                </aside>
+
+<h2>Bước 4: Xếp lịch ca</h2>
+<p>Tạo các ca (sáng, chiều, tối, cả ngày) và xếp nhân viên theo tuần. Nhân viên mở app là biết lịch làm của mình.</p>
+<p>Ví dụ minh họa: quán mở 7h–22h, chia ca sáng 7h–14h và ca chiều 14h–22h. Thứ Bảy, Chủ Nhật xếp thêm một người ca chiều vì đông khách.</p>
+<h2>Bước 5: Chấm công và tính lương</h2>
+<ul>
+<li>Nhân viên <strong>chấm công vào, ra</strong> trên app.</li>
+<li>SoDi <strong>đánh dấu đi trễ</strong> so với giờ ca.</li>
+<li>Cuối kỳ, <strong>tính lương theo công</strong> đã chấm.</li>
+</ul>
+<p>Ví dụ minh họa: giả sử lương ca 7 tiếng là 180.000đ. Lan làm 24 ca trong tháng, lương 4.320.000đ trước thưởng, phạt (nếu có).</p>
+<h2>Bước 6: Mở ca, chốt ca</h2>
+<p>Gắn trách nhiệm tiền két cho từng ca: nhân viên nhập tiền đầu ca, cuối ca đếm tiền và chốt. SoDi ghi khoản lệch và người chốt. Xem chi tiết trong bài <a href="/huong-dan/mo-ca-chot-ca">mở ca, chốt ca</a>.</p>
+<h2>Khi nhân viên nghỉ việc</h2>
+<ol>
+<li>Xóa hoặc tắt quyền tài khoản nhân viên ngay hôm nghỉ.</li>
+<li>Xem lại lịch sử chốt ca gần nhất của người đó.</li>
+<li>Đổi mật khẩu tài khoản chủ nếu nhân viên từng biết.</li>
+</ol>
+<h2>Ngày đầu của nhân viên mới</h2>
+<ol>
+<li>Cho nhân viên đăng nhập và tự tạo vài đơn thử với bạn đứng cạnh.</li>
+<li>Giải thích quyền của họ: được làm gì, việc gì phải gọi quản lý.</li>
+<li>Cho thử thu tiền mặt, thu bằng mã QR và in hóa đơn.</li>
+<li>Cùng làm một lần mở ca, chốt ca.</li>
+<li>Cuối ngày hỏi lại chỗ nào còn lúng túng để hướng dẫn thêm.</li>
+</ol>
+<h2>Gợi ý theo mô hình</h2>
+<ul>
+<li><strong>Quán cafe:</strong> thu ngân kiêm pha chế, quyền tạo đơn và thu tiền, không hủy đơn. Xem <a href="/nganh/phan-mem-quan-ly-quan-cafe">phần mềm quản lý quán cafe</a>.</li>
+<li><strong>Quán ăn:</strong> phục vụ chỉ thêm món vào bàn, thu ngân thu tiền. Xem <a href="/nganh/phan-mem-quan-ly-quan-an">phần mềm quản lý quán ăn</a>.</li>
+<li><strong>Tạp hóa gia đình:</strong> người nhà dùng tài khoản riêng, chủ giữ quyền nhập kho và ghi nợ. Xem <a href="/nganh/phan-mem-quan-ly-tap-hoa">phần mềm quản lý tạp hóa</a>.</li>
+</ul>
+
+                </div>
+                <section class="article-faq" aria-labelledby="faq-title">
+                    <h2 id="faq-title">Câu hỏi thường gặp</h2>
+                    <details class="qa">
+                        <summary>Nhân viên có cần tải app riêng không?</summary>
+                        <p>Nhân viên dùng cùng ứng dụng SoDi, đăng nhập vào cửa hàng của bạn bằng mã hoặc quét QR. Có thể dùng trên máy riêng của nhân viên hoặc máy chung ở quầy.</p>
+                    </details>
+                    <details class="qa">
+                        <summary>Nhân viên nghỉ việc thì làm sao?</summary>
+                        <p>Xóa hoặc tắt quyền của tài khoản nhân viên đó ngay hôm nghỉ để họ không vào được cửa hàng nữa.</p>
+                    </details>
+                    <details class="qa">
+                        <summary>Chủ có biết khi nhân viên hủy đơn không?</summary>
+                        <p>SoDi có thể báo cho chủ khi nhân viên giảm giá vượt mức hoặc hủy đơn.</p>
+                    </details>
+                </section>
+                <section class="related" aria-labelledby="related-title">
+                    <h2 id="related-title" class="related-title">Bài liên quan</h2>
+                    <ul class="post-grid">
+                    <li class="post-card">
+                        <a href="/huong-dan/mo-ca-chot-ca">
+                            <span class="post-card-kicker">Hướng dẫn</span>
+                            <h3 class="post-card-title">Mở ca, chốt ca và đối chiếu tiền két</h3>
+                            <p>Hướng dẫn mở ca, chốt ca trên SoDi: nhập tiền đầu ca, đếm tiền két, xem khoản lệch và người chốt, dùng checklist và đếm hàng theo ca để chống thất thoát.</p>
+                            <span class="post-card-more">Đọc tiếp</span>
+                        </a>
+                    </li>
+                    <li class="post-card">
+                        <a href="/kien-thuc/chong-that-thoat-khi-giao-ca">
+                            <span class="post-card-kicker">Kiến thức</span>
+                            <h3 class="post-card-title">Chống thất thoát quán cafe khi giao ca</h3>
+                            <p>Cách chống thất thoát quán cafe khi giao ca: kẽ hở thường gặp với tiền két, nguyên liệu và ly, quy trình giao ca 7 bước, cách đọc số lệch và xử lý khi lệch.</p>
+                            <span class="post-card-more">Đọc tiếp</span>
+                        </a>
+                    </li>
+                    <li class="post-card">
+                        <a href="/nganh/phan-mem-quan-ly-quan-an">
+                            <span class="post-card-kicker">Ngành hàng</span>
+                            <h3 class="post-card-title">Phần mềm quản lý quán ăn, quán cơm trên điện thoại</h3>
+                            <p>Phần mềm quản lý quán ăn SoDi: quản lý bàn và khu vực, in phiếu bếp, đơn mang đi và app giao đồ ăn, thu tiền QR, báo cáo lãi theo món ngay trên điện thoại.</p>
+                            <span class="post-card-more">Đọc tiếp</span>
+                        </a>
+                    </li>
+                    </ul>
+                </section>
+            </div>
+        </article>
+
+        <section class="closing" id="tai-ung-dung">
+            <div class="wrap closing-inner">
+                <h2 class="closing-title">Sẵn sàng quản lý cửa hàng gọn hơn?</h2>
+                <p class="closing-lead">Tải SoDi ngay hôm nay. Miễn phí để bắt đầu, không cần thẻ thanh toán.</p>
+                <div class="store-row store-row-center">
+                <a class="store-link" href="https://apps.apple.com/us/app/sodi-qu%E1%BA%A3n-l%C3%BD-b%C3%A1n-h%C3%A0ng/id6474116712" target="_blank" rel="noopener" aria-label="Tải SoDi trên App Store">
+                    <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Tải trên App Store" width="162" height="54" loading="lazy">
+                </a>
+                <a class="store-link" href="https://play.google.com/store/apps/details?id=com.buffchalo.sales_management" target="_blank" rel="noopener" aria-label="Tải SoDi trên Google Play">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Tải trên Google Play" width="182" height="54" loading="lazy">
+                </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="wrap footer-grid">
+            <div class="footer-brand">
+                <a class="brand" href="/" aria-label="Sodi - trang chủ">
+                    <img src="/assets/images/logo/logo.png" alt="" width="32" height="32" class="brand-logo" loading="lazy">
+                    <span class="brand-name">Sodi</span>
+                </a>
+                <p>Phần mềm quản lý bán hàng, kho hàng và hóa đơn trên điện thoại cho chủ shop và quán cafe.</p>
+            </div>
+            <div class="footer-col">
+                <h2 class="footer-h">Sản phẩm</h2>
+                <a href="/#tinh-nang">Tính năng</a>
+                <a href="/#hoi-dap">Hỏi đáp</a>
+                <a href="/huong-dan">Hướng dẫn</a>
+                <a href="/kien-thuc">Kiến thức</a>
+            </div>
+            <div class="footer-col">
+                <h2 class="footer-h">Ngành hàng</h2>
+                <a href="/nganh/phan-mem-quan-ly-quan-cafe">Quán cafe, trà sữa</a>
+                <a href="/nganh/phan-mem-quan-ly-quan-an">Quán ăn</a>
+                <a href="/nganh/phan-mem-quan-ly-tap-hoa">Tạp hóa</a>
+                <a href="/nganh/phan-mem-quan-ly-cho-thue">Cho thuê</a>
+            </div>
+            <div class="footer-col">
+                <h2 class="footer-h">Tải ứng dụng</h2>
+                <a href="https://apps.apple.com/us/app/sodi-qu%E1%BA%A3n-l%C3%BD-b%C3%A1n-h%C3%A0ng/id6474116712" target="_blank" rel="noopener">App Store</a>
+                <a href="https://play.google.com/store/apps/details?id=com.buffchalo.sales_management" target="_blank" rel="noopener">Google Play</a>
+            </div>
+            <div class="footer-col">
+                <h2 class="footer-h">Liên hệ</h2>
+                <a href="mailto:support@sodientu.com">support@sodientu.com</a>
+                <a href="https://facebook.com/soquanlydientu" target="_blank" rel="noopener">Facebook</a>
+                <a href="https://youtube.com/@SoDiPos" target="_blank" rel="noopener">YouTube</a>
+            </div>
+        </div>
+        <div class="wrap footer-base">
+            <p>© <span id="year">2026</span> Sodi Quản lý bán hàng. <a href="/privacy-policy.html">Chính sách bảo mật</a> · <a href="/terms-of-service.html">Điều khoản</a></p>
+        </div>
+    </footer>
+
+    <script src="/assets/js/site.js?v=dfeb4e74" defer></script>
+</body>
+
+</html>

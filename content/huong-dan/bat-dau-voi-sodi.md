@@ -78,7 +78,7 @@ Cách tạo đơn chi tiết hơn (chọn bàn, ghi chú, giảm giá, quét mã
 Khi đã quen, sửa cửa hàng mẫu thành cửa hàng thật:
 
 - **Sửa danh mục và món:** đổi tên, giá bán, size, hình ảnh. Xóa món bạn không bán.
-- **Nhiều sản phẩm?** Nhập danh sách hàng loạt từ file Excel thay vì gõ từng món.
+- **Nhiều sản phẩm?** [Nhập danh sách hàng loạt từ file Excel](/huong-dan/nhap-san-pham-tu-excel) thay vì gõ từng món.
 - **Giá vốn:** nhập giá vốn cho từng món, hoặc để SoDi tính giá vốn mặc định theo phần trăm giá bán.
 - **Bàn và khu vực** (quán cafe, quán ăn): tạo khu vực và đánh số bàn.
 
@@ -87,8 +87,8 @@ Khi đã quen, sửa cửa hàng mẫu thành cửa hàng thật:
 Không cần làm hết ngay hôm nay. Mỗi việc dưới đây có thể làm sau:
 
 - **Nhận chuyển khoản bằng mã QR:** thêm tài khoản ngân hàng để in mã VietQR trên đơn. Xem [hướng dẫn thanh toán QR](/huong-dan/thanh-toan-qr-chuyen-khoan).
-- **Kết nối máy in:** máy in nhiệt qua Bluetooth hoặc mạng LAN để in hóa đơn, phiếu bếp, tem nhãn.
-- **Thêm nhân viên:** tạo tài khoản, phân quyền từng việc. Nhân viên đăng nhập bằng mã hoặc quét QR.
+- **Kết nối máy in:** máy in nhiệt qua Bluetooth hoặc mạng LAN để in hóa đơn, phiếu bếp, tem nhãn. Xem [kết nối máy in](/huong-dan/ket-noi-may-in-hoa-don).
+- **Thêm nhân viên:** tạo tài khoản, phân quyền từng việc. Nhân viên đăng nhập bằng mã hoặc quét QR. Xem [tạo tài khoản nhân viên](/huong-dan/nhan-vien-phan-quyen).
 - **Dùng trên nhiều máy:** đăng nhập cùng cửa hàng trên điện thoại, máy tính bảng, hoặc máy tính qua console.sodientu.com. Dữ liệu đồng bộ giữa các máy.
 - **Nhiều cửa hàng:** quản lý nhiều cửa hàng trong cùng một tài khoản.
 

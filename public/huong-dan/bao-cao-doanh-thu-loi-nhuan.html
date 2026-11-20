@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xem báo cáo doanh thu, lợi nhuận, món bán chạy | SoDi</title>
+    <meta name="description" content="Hướng dẫn đọc báo cáo SoDi: doanh thu và lãi theo giờ, ngày, tháng, món bán chạy, đơn theo kênh, tiền mặt và chuyển khoản, món bán dưới giá vốn, xuất Excel.">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0E7C66">
+    <link rel="canonical" href="https://sodientu.com/huong-dan/bao-cao-doanh-thu-loi-nhuan">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://sodientu.com/huong-dan/bao-cao-doanh-thu-loi-nhuan">
+    <meta property="og:title" content="Xem báo cáo doanh thu, lợi nhuận, món bán chạy | SoDi">
+    <meta property="og:description" content="Hướng dẫn đọc báo cáo SoDi: doanh thu và lãi theo giờ, ngày, tháng, món bán chạy, đơn theo kênh, tiền mặt và chuyển khoản, món bán dưới giá vốn, xuất Excel.">
+    <meta property="og:image" content="https://sodientu.com/assets/images/hero/phone.png">
+    <meta property="og:locale" content="vi_VN">
+    <meta property="og:site_name" content="SoDi">
+    <meta property="article:published_time" content="2026-11-20">
+    <meta property="article:modified_time" content="2026-11-20">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Xem báo cáo doanh thu, lợi nhuận, món bán chạy | SoDi">
+    <meta name="twitter:description" content="Hướng dẫn đọc báo cáo SoDi: doanh thu và lãi theo giờ, ngày, tháng, món bán chạy, đơn theo kênh, tiền mặt và chuyển khoản, món bán dưới giá vốn, xuất Excel.">
+    <meta name="twitter:image" content="https://sodientu.com/assets/images/hero/phone.png">
+
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+    <link rel="apple-touch-icon" href="/assets/images/logo/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/site.css?v=919a40c1">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Trang chủ",
+          "item": "https://sodientu.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Hướng dẫn",
+          "item": "https://sodientu.com/huong-dan"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Xem báo cáo doanh thu, lợi nhuận và món bán chạy",
+          "item": "https://sodientu.com/huong-dan/bao-cao-doanh-thu-loi-nhuan"
+        }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Xem báo cáo doanh thu, lợi nhuận và món bán chạy",
+      "description": "Hướng dẫn đọc báo cáo SoDi: doanh thu và lãi theo giờ, ngày, tháng, món bán chạy, đơn theo kênh, tiền mặt và chuyển khoản, món bán dưới giá vốn, xuất Excel.",
+      "image": [
+        "https://sodientu.com/assets/images/hero/phone.png"
+      ],
+      "datePublished": "2026-11-20",
+      "dateModified": "2026-11-20",
+      "inLanguage": "vi",
+      "mainEntityOfPage": "https://sodientu.com/huong-dan/bao-cao-doanh-thu-loi-nhuan",
+      "author": {
+        "@type": "Organization",
+        "name": "SoDi",
+        "url": "https://sodientu.com/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "SoDi",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://sodientu.com/assets/images/logo/logo.png"
+        }
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Vì sao báo cáo lãi của tôi bằng doanh thu?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Có thể bạn chưa nhập giá vốn. Nhập giá vốn cho sản phẩm, công thức món, hoặc đặt giá vốn mặc định theo phần trăm giá bán."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Báo cáo có tính tiền thuê mặt bằng, lương không?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Lãi theo đơn tính từ giá bán trừ giá vốn. Các khoản như tiền điện, tiền chợ ghi vào thu chi ngoài đơn hàng để theo dõi riêng."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Xuất báo cáo ra Excel được không?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Được. Bạn xuất báo cáo ra Excel để lưu trữ, tự phân tích hoặc gửi kế toán."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16666143438"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'AW-16666143438');
+    </script>
+</head>
+<body>
+    <a class="skip-link" href="#noi-dung">Bỏ qua điều hướng</a>
+
+    <header class="header" id="header">
+        <div class="wrap header-bar">
+            <a class="brand" href="/" aria-label="Sodi - trang chủ">
+                <img src="/assets/images/logo/logo.png" alt="" width="36" height="36" class="brand-logo">
+                <span class="brand-name">Sodi</span>
+            </a>
+
+            <nav class="nav" id="nav" aria-label="Điều hướng chính">
+                <a class="nav-link" href="/#tinh-nang">Tính năng</a>
+                <a class="nav-link" href="/#nganh-hang">Ngành hàng</a>
+                <a class="nav-link" href="/huong-dan" aria-current="page">Hướng dẫn</a>
+                <a class="nav-link" href="/kien-thuc">Kiến thức</a>
+                <a class="nav-link" href="/#hoi-dap">Hỏi đáp</a>
+                <a class="btn btn-primary btn-sm nav-cta" href="#tai-ung-dung">Tải ứng dụng</a>
+            </nav>
+
+            <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="nav"
+                aria-label="Mở menu">
+                <span class="menu-bars" aria-hidden="true"></span>
+            </button>
+        </div>
+    </header>
+
+    <main id="noi-dung">
+        <article class="article">
+            <div class="wrap article-wrap">
+                <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Trang chủ</a></li><li><a href="/huong-dan">Hướng dẫn</a></li><li aria-current="page">Xem báo cáo doanh thu, lợi nhuận và món bán chạy</li></ol></nav>
+                <header class="article-head">
+                    <p class="eyebrow">Hướng dẫn sử dụng</p>
+                    <h1 class="article-title">Xem báo cáo doanh thu, lợi nhuận và món bán chạy</h1>
+                    <p class="article-lead">Doanh thu và lãi theo giờ, ngày, tháng, món bán chạy, kênh bán, tiền mặt và chuyển khoản. Đọc ngay trên điện thoại, xuất Excel khi cần.</p>
+                    <p class="article-meta">Cập nhật <time datetime="2026-11-20">20/11/2026</time> · SoDi</p>
+                </header>
+                <div class="prose">
+<!-- TODO: kiểm tra lại tên các báo cáo và bộ lọc trong app trước khi deploy -->
+
+<p>Bán hàng mỗi ngày nhưng không biết lãi bao nhiêu thì rất khó ra quyết định: nên tăng giá món nào, giờ nào cần thêm người, kênh nào đáng đầu tư. Bài này hướng dẫn đọc các báo cáo trên SoDi và dùng chúng để quyết định.</p>
+<h2>Trước khi xem báo cáo: nhập giá vốn</h2>
+<p>Báo cáo <strong>doanh thu</strong> có ngay từ đơn đầu tiên. Nhưng báo cáo <strong>lãi</strong> cần giá vốn. Có ba cách:</p>
+<ol>
+<li><strong>Giá vốn từng sản phẩm:</strong> nhập qua phiếu nhập kho. Xem <a href="/huong-dan/quan-ly-kho-hang">quản lý kho hàng</a>.</li>
+<li><strong>Nguyên liệu và công thức món:</strong> cho quán cafe, quán ăn. Xem <a href="/kien-thuc/cach-tinh-gia-von-ly-ca-phe">cách tính giá vốn ly cà phê</a>.</li>
+<li><strong>Giá vốn mặc định theo % giá bán:</strong> cách nhanh khi chưa có thời gian nhập chi tiết. Ví dụ đặt 35%, món bán 30.000đ được tính giá vốn 10.500đ.</li>
+</ol>
+<h2>Doanh thu và lãi theo giờ, ngày, tháng</h2>
+<ul>
+<li><strong>Theo ngày, tháng:</strong> xem xu hướng, so sánh tháng này với tháng trước.</li>
+<li><strong>Theo giờ:</strong> biết khung giờ nào đông khách để xếp thêm người, khung giờ nào vắng để làm khuyến mãi.</li>
+<li><strong>So sánh với cùng thứ tuần trước:</strong> thứ Bảy này so với thứ Bảy tuần trước sát thực tế hơn so với hôm qua.</li>
+</ul>
+<p>Ví dụ minh họa: giả sử báo cáo theo giờ cho thấy 11h–13h chiếm gần một nửa doanh thu ngày, còn 14h–16h rất vắng. Bạn xếp thêm một người ca trưa, và thử khuyến mãi giờ chiều. Bài <a href="/kien-thuc/tang-doanh-thu-gio-thap-diem">tăng doanh thu giờ thấp điểm</a> có nhiều ý tưởng.</p>
+<!-- TODO: ảnh màn hình báo cáo theo giờ -->
+
+<h2>Món bán chạy và lãi theo món</h2>
+<p>Báo cáo món bán chạy cho biết món nào bán nhiều nhất. Kết hợp với lãi theo từng sản phẩm, bạn chia món thành bốn nhóm:</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Nhóm</th>
+<th>Đặc điểm</th>
+<th>Nên làm</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Bán nhiều, lãi cao</td>
+<td>Món chủ lực</td>
+<td>Giữ chất lượng, đặt ở vị trí dễ thấy</td>
+</tr>
+<tr>
+<td>Bán nhiều, lãi thấp</td>
+<td>Kéo khách</td>
+<td>Xem lại giá vốn hoặc tăng giá nhẹ</td>
+</tr>
+<tr>
+<td>Bán ít, lãi cao</td>
+<td>Tiềm năng</td>
+<td>Giới thiệu nhiều hơn, làm combo</td>
+</tr>
+<tr>
+<td>Bán ít, lãi thấp</td>
+<td>Gánh nặng</td>
+<td>Cân nhắc bỏ khỏi menu</td>
+</tr>
+</tbody></table></div>
+<aside class="cta-box" aria-label="Tải ứng dụng SoDi">
+                    <p class="cta-box-title">Thử SoDi cho cửa hàng của bạn</p>
+                    <p class="cta-box-text">Miễn phí để bắt đầu. Cài trên điện thoại và tạo đơn đầu tiên trong vài phút.</p>
+                    <div class="store-row">
+                <a class="store-link" href="https://apps.apple.com/us/app/sodi-qu%E1%BA%A3n-l%C3%BD-b%C3%A1n-h%C3%A0ng/id6474116712" target="_blank" rel="noopener" aria-label="Tải SoDi trên App Store">
+                    <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Tải trên App Store" width="162" height="54" loading="lazy">
+                </a>
+                <a class="store-link" href="https://play.google.com/store/apps/details?id=com.buffchalo.sales_management" target="_blank" rel="noopener" aria-label="Tải SoDi trên Google Play">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Tải trên Google Play" width="182" height="54" loading="lazy">
+                </a>
+                    </div>
+                </aside>
+
+<h2>Món bán dưới giá vốn</h2>
+<p>SoDi có báo cáo <strong>món bán dưới giá vốn</strong>. Thường gặp khi giá nguyên liệu tăng mà bạn chưa đổi giá bán, hoặc giảm giá quá tay. Xem báo cáo này mỗi tuần, nhất là sau khi nhập hàng với giá mới.</p>
+<h2>Số đơn theo kênh</h2>
+<p>Đơn chia theo loại: <strong>tại quán</strong>, <strong>mang đi</strong>, <strong>app giao đồ ăn</strong>. Báo cáo cho thấy số đơn theo từng kênh. Nếu app giao đồ ăn chiếm phần lớn đơn nhưng bị trừ phí cao, bạn cần tính lại giá bán trên app đó.</p>
+<h2>Doanh thu theo hình thức thanh toán</h2>
+<p>Tách tiền mặt và chuyển khoản. Dùng để:</p>
+<ul>
+<li>Đối chiếu tiền két khi <a href="/huong-dan/mo-ca-chot-ca">chốt ca</a>.</li>
+<li>Đối chiếu chuyển khoản với sao kê ngân hàng.</li>
+</ul>
+<h2>Đơn hủy, đơn trả</h2>
+<p>Theo dõi đơn hủy, đơn trả trong báo cáo. Số đơn hủy tăng bất thường là dấu hiệu cần kiểm tra. Kết hợp với <a href="/huong-dan/nhan-vien-phan-quyen">phân quyền nhân viên</a> để chỉ người được phép mới hủy được đơn.</p>
+<h2>Thu chi ngoài đơn hàng</h2>
+<p>Ghi các khoản không đến từ bán hàng: tiền điện, tiền chợ, tiền gas, tiền ship, thu khác. Như vậy cuối tháng bạn thấy được bức tranh tiền vào, tiền ra đầy đủ hơn.</p>
+<h2>Báo cáo kho</h2>
+<p>Xem tồn kho, giá trị tồn và lô sắp hết hạn. Xem bài <a href="/huong-dan/quan-ly-kho-hang">quản lý kho hàng</a>.</p>
+<h2>Xuất Excel</h2>
+<p>Mọi báo cáo xuất được ra Excel. Dùng để lưu trữ theo tháng, tự làm biểu đồ, hoặc gửi kế toán.</p>
+<h2>Thói quen xem báo cáo gợi ý</h2>
+<ul>
+<li><strong>Mỗi tối (2 phút):</strong> doanh thu, lãi trong ngày, tiền mặt và chuyển khoản.</li>
+<li><strong>Mỗi tuần (10 phút):</strong> so với tuần trước, món bán chạy, món bán dưới giá vốn, đơn hủy.</li>
+<li><strong>Mỗi tháng (30 phút):</strong> lãi tháng, thu chi ngoài đơn, giá trị tồn kho, xuất Excel lưu trữ.</li>
+</ul>
+<p>Xem cách dùng báo cáo cho <a href="/nganh/phan-mem-quan-ly-quan-an">quán ăn</a> và <a href="/nganh/phan-mem-quan-ly-quan-cafe">quán cafe</a>.</p>
+
+                </div>
+                <section class="article-faq" aria-labelledby="faq-title">
+                    <h2 id="faq-title">Câu hỏi thường gặp</h2>
+                    <details class="qa">
+                        <summary>Vì sao báo cáo lãi của tôi bằng doanh thu?</summary>
+                        <p>Có thể bạn chưa nhập giá vốn. Nhập giá vốn cho sản phẩm, công thức món, hoặc đặt giá vốn mặc định theo phần trăm giá bán.</p>
+                    </details>
+                    <details class="qa">
+                        <summary>Báo cáo có tính tiền thuê mặt bằng, lương không?</summary>
+                        <p>Lãi theo đơn tính từ giá bán trừ giá vốn. Các khoản như tiền điện, tiền chợ ghi vào thu chi ngoài đơn hàng để theo dõi riêng.</p>
+                    </details>
+                    <details class="qa">
+                        <summary>Xuất báo cáo ra Excel được không?</summary>
+                        <p>Được. Bạn xuất báo cáo ra Excel để lưu trữ, tự phân tích hoặc gửi kế toán.</p>
+                    </details>
+                </section>
+                <section class="related" aria-labelledby="related-title">
+                    <h2 id="related-title" class="related-title">Bài liên quan</h2>
+                    <ul class="post-grid">
+                    <li class="post-card">
+                        <a href="/kien-thuc/cach-tinh-loi-nhuan-quan-an">
+                            <span class="post-card-kicker">Kiến thức</span>
+                            <h3 class="post-card-title">Cách tính lợi nhuận quán ăn theo ngày và theo tháng</h3>
+                            <p>Cách tính lợi nhuận quán ăn: phân biệt doanh thu, lãi gộp, lãi ròng, tính giá vốn món, chi phí vận hành, điểm hòa vốn, kèm ví dụ một quán cơm nhỏ.</p>
+                            <span class="post-card-more">Đọc tiếp</span>
+                        </a>
+                    </li>
+                    <li class="post-card">
+                        <a href="/kien-thuc/cach-tinh-gia-von-ly-ca-phe">
+                            <span class="post-card-kicker">Kiến thức</span>
+                            <h3 class="post-card-title">Cách tính giá vốn một ly cà phê (có ví dụ cụ thể)</h3>
+                            <p>Cách tính giá vốn ly cà phê từng bước: định lượng nguyên liệu, quy đổi giá, cộng ly và đá, tính hao hụt. Có ví dụ bạc xỉu, cà phê đen và cách định giá bán.</p>
+                            <span class="post-card-more">Đọc tiếp</span>
+                        </a>
+                    </li>
+                    <li class="post-card">
+                        <a href="/nganh/phan-mem-quan-ly-quan-an">
+                            <span class="post-card-kicker">Ngành hàng</span>
+                            <h3 class="post-card-title">Phần mềm quản lý quán ăn, quán cơm trên điện thoại</h3>
+                            <p>Phần mềm quản lý quán ăn SoDi: quản lý bàn và khu vực, in phiếu bếp, đơn mang đi và app giao đồ ăn, thu tiền QR, báo cáo lãi theo món ngay trên điện thoại.</p>
+                            <span class="post-card-more">Đọc tiếp</span>
+                        </a>
+                    </li>
+                    </ul>
+                </section>
+            </div>
+        </article>
+
+        <section class="closing" id="tai-ung-dung">
+            <div class="wrap closing-inner">
+                <h2 class="closing-title">Sẵn sàng quản lý cửa hàng gọn hơn?</h2>
+                <p class="closing-lead">Tải SoDi ngay hôm nay. Miễn phí để bắt đầu, không cần thẻ thanh toán.</p>
+                <div class="store-row store-row-center">
+                <a class="store-link" href="https://apps.apple.com/us/app/sodi-qu%E1%BA%A3n-l%C3%BD-b%C3%A1n-h%C3%A0ng/id6474116712" target="_blank" rel="noopener" aria-label="Tải SoDi trên App Store">
+                    <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Tải trên App Store" width="162" height="54" loading="lazy">
+                </a>
+                <a class="store-link" href="https://play.google.com/store/apps/details?id=com.buffchalo.sales_management" target="_blank" rel="noopener" aria-label="Tải SoDi trên Google Play">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Tải trên Google Play" width="182" height="54" loading="lazy">
+                </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="wrap footer-grid">
+            <div class="footer-brand">
+                <a class="brand" href="/" aria-label="Sodi - trang chủ">
+                    <img src="/assets/images/logo/logo.png" alt="" width="32" height="32" class="brand-logo" loading="lazy">
+                    <span class="brand-name">Sodi</span>
+                </a>
+                <p>Phần mềm quản lý bán hàng, kho hàng và hóa đơn trên điện thoại cho chủ shop và quán cafe.</p>
+            </div>
+            <div class="footer-col">
+                <h2 class="footer-h">Sản phẩm</h2>
+                <a href="/#tinh-nang">Tính năng</a>
+                <a href="/#hoi-dap">Hỏi đáp</a>
+                <a href="/huong-dan">Hướng dẫn</a>
+                <a href="/kien-thuc">Kiến thức</a>
+            </div>
+            <div class="footer-col">
+                <h2 class="footer-h">Ngành hàng</h2>
+                <a href="/nganh/phan-mem-quan-ly-quan-cafe">Quán cafe, trà sữa</a>
+                <a href="/nganh/phan-mem-quan-ly-quan-an">Quán ăn</a>
+                <a href="/nganh/phan-mem-quan-ly-tap-hoa">Tạp hóa</a>
+                <a href="/nganh/phan-mem-quan-ly-cho-thue">Cho thuê</a>
+            </div>
+            <div class="footer-col">
+                <h2 class="footer-h">Tải ứng dụng</h2>
+                <a href="https://apps.apple.com/us/app/sodi-qu%E1%BA%A3n-l%C3%BD-b%C3%A1n-h%C3%A0ng/id6474116712" target="_blank" rel="noopener">App Store</a>
+                <a href="https://play.google.com/store/apps/details?id=com.buffchalo.sales_management" target="_blank" rel="noopener">Google Play</a>
+            </div>
+            <div class="footer-col">
+                <h2 class="footer-h">Liên hệ</h2>
+                <a href="mailto:support@sodientu.com">support@sodientu.com</a>
+                <a href="https://facebook.com/soquanlydientu" target="_blank" rel="noopener">Facebook</a>
+                <a href="https://youtube.com/@SoDiPos" target="_blank" rel="noopener">YouTube</a>
+            </div>
+        </div>
+        <div class="wrap footer-base">
+            <p>© <span id="year">2026</span> Sodi Quản lý bán hàng. <a href="/privacy-policy.html">Chính sách bảo mật</a> · <a href="/terms-of-service.html">Điều khoản</a></p>
+        </div>
+    </footer>
+
+    <script src="/assets/js/site.js?v=dfeb4e74" defer></script>
+</body>
+
+</html>

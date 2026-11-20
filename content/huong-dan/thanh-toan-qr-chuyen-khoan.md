@@ -47,11 +47,9 @@ Kiểm tra kỹ số tài khoản trước khi lưu. Đây là tài khoản khá
 
 Khi thanh toán đơn, chọn chuyển khoản. SoDi hiện mã VietQR của đơn đó trên màn hình. Xoay màn hình cho khách quét, hoặc mang điện thoại, máy tính bảng tới bàn.
 
-Khách mở app ngân hàng, quét mã, kiểm tra số tiền và tên người nhận rồi xác nhận chuyển.
+Mã QR đã điền sẵn **đúng số tiền của đơn**. Khách mở app ngân hàng, quét mã, kiểm tra tên người nhận rồi xác nhận chuyển, không phải gõ số tiền.
 
 Cách tạo đơn từ đầu có trong bài [tạo đơn bán hàng trên điện thoại](/huong-dan/tao-don-ban-hang).
-
-<!-- TODO: chờ xác nhận mã QR có điền sẵn số tiền của đơn hay không (đoạn đầu bài so sánh với QR cố định phải gõ tiền) -->
 
 <!-- cta -->
 

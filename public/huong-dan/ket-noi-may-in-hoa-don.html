@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kết nối máy in hóa đơn, phiếu bếp, tem nhãn | SoDi</title>
+    <meta name="description" content="Hướng dẫn kết nối máy in hóa đơn với SoDi qua Bluetooth hoặc mạng LAN: in hóa đơn, phiếu bếp, tem nhãn, xuất PDF và cách xử lý lỗi máy in thường gặp.">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0E7C66">
+    <link rel="canonical" href="https://sodientu.com/huong-dan/ket-noi-may-in-hoa-don">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://sodientu.com/huong-dan/ket-noi-may-in-hoa-don">
+    <meta property="og:title" content="Kết nối máy in hóa đơn, phiếu bếp, tem nhãn | SoDi">
+    <meta property="og:description" content="Hướng dẫn kết nối máy in hóa đơn với SoDi qua Bluetooth hoặc mạng LAN: in hóa đơn, phiếu bếp, tem nhãn, xuất PDF và cách xử lý lỗi máy in thường gặp.">
+    <meta property="og:image" content="https://sodientu.com/assets/images/hero/phone.png">
+    <meta property="og:locale" content="vi_VN">
+    <meta property="og:site_name" content="SoDi">
+    <meta property="article:published_time" content="2026-11-20">
+    <meta property="article:modified_time" content="2026-11-20">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Kết nối máy in hóa đơn, phiếu bếp, tem nhãn | SoDi">
+    <meta name="twitter:description" content="Hướng dẫn kết nối máy in hóa đơn với SoDi qua Bluetooth hoặc mạng LAN: in hóa đơn, phiếu bếp, tem nhãn, xuất PDF và cách xử lý lỗi máy in thường gặp.">
+    <meta name="twitter:image" content="https://sodientu.com/assets/images/hero/phone.png">
+
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+    <link rel="apple-touch-icon" href="/assets/images/logo/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/site.css?v=919a40c1">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Trang chủ",
+          "item": "https://sodientu.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Hướng dẫn",
+          "item": "https://sodientu.com/huong-dan"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Kết nối máy in hóa đơn, in phiếu bếp và in tem nhãn",
+          "item": "https://sodientu.com/huong-dan/ket-noi-may-in-hoa-don"
+        }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Kết nối máy in hóa đơn, in phiếu bếp và in tem nhãn",
+      "description": "Hướng dẫn kết nối máy in hóa đơn với SoDi qua Bluetooth hoặc mạng LAN: in hóa đơn, phiếu bếp, tem nhãn, xuất PDF và cách xử lý lỗi máy in thường gặp.",
+      "image": [
+        "https://sodientu.com/assets/images/hero/phone.png"
+      ],
+      "datePublished": "2026-11-20",
+      "dateModified": "2026-11-20",
+      "inLanguage": "vi",
+      "mainEntityOfPage": "https://sodientu.com/huong-dan/ket-noi-may-in-hoa-don",
+      "author": {
+        "@type": "Organization",
+        "name": "SoDi",
+        "url": "https://sodientu.com/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "SoDi",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://sodientu.com/assets/images/logo/logo.png"
+        }
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Không có máy in thì có dùng SoDi được không?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Được. Bạn vẫn bán hàng, thu tiền và xem báo cáo bình thường. Khi khách cần hóa đơn, xuất PDF để gửi qua tin nhắn."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Nên chọn máy in Bluetooth hay máy in mạng LAN?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Máy in Bluetooth hợp với quầy nhỏ, đặt gần điện thoại. Máy in mạng LAN hợp với bếp hoặc khi nhiều máy cùng in ra một máy in."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Một cửa hàng dùng được mấy máy in?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Bạn có thể dùng máy in hóa đơn ở quầy và máy in phiếu bếp riêng. Hãy thử với đúng loại máy in của bạn trước khi mua thêm."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16666143438"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'AW-16666143438');
+    </script>
+</head>
+<body>
+    <a class="skip-link" href="#noi-dung">Bỏ qua điều hướng</a>
+
+    <header class="header" id="header">
+        <div class="wrap header-bar">
+            <a class="brand" href="/" aria-label="Sodi - trang chủ">
+                <img src="/assets/images/logo/logo.png" alt="" width="36" height="36" class="brand-logo">
+                <span class="brand-name">Sodi</span>
+            </a>
+
+            <nav class="nav" id="nav" aria-label="Điều hướng chính">
+                <a class="nav-link" href="/#tinh-nang">Tính năng</a>
+                <a class="nav-link" href="/#nganh-hang">Ngành hàng</a>
+                <a class="nav-link" href="/huong-dan" aria-current="page">Hướng dẫn</a>
+                <a class="nav-link" href="/kien-thuc">Kiến thức</a>
+                <a class="nav-link" href="/#hoi-dap">Hỏi đáp</a>
+                <a class="btn btn-primary btn-sm nav-cta" href="#tai-ung-dung">Tải ứng dụng</a>
+            </nav>
+
+            <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="nav"
+                aria-label="Mở menu">
+                <span class="menu-bars" aria-hidden="true"></span>
+            </button>
+        </div>
+    </header>
+
+    <main id="noi-dung">
+        <article class="article">
+            <div class="wrap article-wrap">
+                <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Trang chủ</a></li><li><a href="/huong-dan">Hướng dẫn</a></li><li aria-current="page">Kết nối máy in hóa đơn, in phiếu bếp và in tem nhãn</li></ol></nav>
+                <header class="article-head">
+                    <p class="eyebrow">Hướng dẫn sử dụng</p>
+                    <h1 class="article-title">Kết nối máy in hóa đơn, in phiếu bếp và in tem nhãn</h1>
+                    <p class="article-lead">Máy in Bluetooth cho quầy, máy in mạng LAN cho bếp, xuất PDF khi cần gửi khách. Kèm cách xử lý khi máy in không chạy.</p>
+                    <p class="article-meta">Cập nhật <time datetime="2026-11-20">20/11/2026</time> · SoDi</p>
+                </header>
+                <div class="prose">
+<!-- TODO: kiểm tra lại tên nút, tên màn hình cài đặt máy in và danh sách máy in đã thử trong app trước khi deploy -->
+
+<p>SoDi in được ba loại giấy: <strong>hóa đơn</strong> cho khách, <strong>phiếu bếp</strong> cho bếp hoặc quầy pha chế, và <strong>tem nhãn</strong> dán lên sản phẩm. Bài này hướng dẫn cách kết nối máy in nhiệt với SoDi và cách xử lý khi máy in không chạy.</p>
+<h2>Chọn kiểu kết nối</h2>
+<p>SoDi kết nối máy in nhiệt theo hai cách:</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Kiểu kết nối</th>
+<th>Hợp với</th>
+<th>Lưu ý</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Bluetooth</td>
+<td>Quầy thu ngân, bán mang đi, cửa hàng nhỏ</td>
+<td>Điện thoại phải ở gần máy in</td>
+</tr>
+<tr>
+<td>Mạng LAN (cùng mạng Wifi)</td>
+<td>Máy in đặt trong bếp, nhiều máy cùng in</td>
+<td>Máy in và điện thoại phải chung một mạng</td>
+</tr>
+</tbody></table></div>
+<p>Ngoài ra, bạn luôn có thể <strong>xuất hóa đơn ra PDF</strong> để gửi khách qua tin nhắn, không cần máy in.</p>
+<p>Trước khi mua máy in, hãy hỏi người bán máy in hỗ trợ Bluetooth hay LAN, khổ giấy bao nhiêu, và nếu được, nhờ in thử với SoDi.</p>
+<h2>Kết nối máy in Bluetooth</h2>
+<ol>
+<li>Bật máy in, nạp giấy.</li>
+<li>Bật Bluetooth trên điện thoại hoặc máy tính bảng.</li>
+<li>Mở SoDi, vào phần cài đặt máy in.</li>
+<li>Chọn kết nối Bluetooth và chọn tên máy in trong danh sách.</li>
+<li>Bấm in thử. Nếu tờ in thử ra đúng, máy in đã sẵn sàng.</li>
+</ol>
+<!-- TODO: ảnh màn hình chọn máy in Bluetooth -->
+
+<p>Mẹo: đặt tên dễ nhận cho máy in (nếu máy cho phép) để không chọn nhầm máy in của cửa hàng bên cạnh.</p>
+<h2>Kết nối máy in mạng LAN</h2>
+<ol>
+<li>Cắm dây mạng cho máy in hoặc kết nối máy in vào Wifi của quán (theo hướng dẫn của hãng máy in).</li>
+<li>Tìm <strong>địa chỉ IP</strong> của máy in. Nhiều máy in nhiệt in ra địa chỉ IP khi bạn giữ nút feed lúc bật máy. Xem sách hướng dẫn của máy để biết chính xác.</li>
+<li>Đảm bảo điện thoại đang dùng <strong>cùng mạng Wifi</strong> với máy in.</li>
+<li>Trong cài đặt máy in của SoDi, chọn kết nối mạng LAN và nhập địa chỉ IP.</li>
+<li>Bấm in thử.</li>
+</ol>
+<p>Nếu Wifi của quán thỉnh thoảng đổi địa chỉ IP cho thiết bị, nhờ người lắp mạng đặt IP cố định cho máy in. Như vậy bạn không phải nhập lại mỗi lần router khởi động lại.</p>
+<aside class="cta-box" aria-label="Tải ứng dụng SoDi">
+                    <p class="cta-box-title">Thử SoDi cho cửa hàng của bạn</p>
+                    <p class="cta-box-text">Miễn phí để bắt đầu. Cài trên điện thoại và tạo đơn đầu tiên trong vài phút.</p>
+                    <div class="store-row">
+                <a class="store-link" href="https://apps.apple.com/us/app/sodi-qu%E1%BA%A3n-l%C3%BD-b%C3%A1n-h%C3%A0ng/id6474116712" target="_blank" rel="noopener" aria-label="Tải SoDi trên App Store">
+                    <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Tải trên App Store" width="162" height="54" loading="lazy">
+                </a>
+                <a class="store-link" href="https://play.google.com/store/apps/details?id=com.buffchalo.sales_management" target="_blank" rel="noopener" aria-label="Tải SoDi trên Google Play">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Tải trên Google Play" width="182" height="54" loading="lazy">
+                </a>
+                    </div>
+                </aside>
+
+<h2>In phiếu bếp</h2>
+<p>Quán ăn và quán cafe thường đặt một máy in riêng ở bếp hoặc quầy pha. Khi tạo đơn, nhân viên in phiếu bếp ra máy đó. Phiếu bếp có tên món, số lượng và ghi chú như &quot;ít đá&quot;, &quot;không hành&quot;, nên bếp không cần hỏi lại.</p>
+<p>Xem cách tạo đơn và ghi chú món trong bài <a href="/huong-dan/tao-don-ban-hang">tạo đơn bán hàng</a>. Quán ăn có nhiều bàn có thể xem thêm <a href="/nganh/phan-mem-quan-ly-quan-an">phần mềm quản lý quán ăn</a>.</p>
+<h2>In tem nhãn</h2>
+<p>Tem nhãn dùng để dán lên ly, hộp hoặc sản phẩm trên kệ. Với hàng quản lý theo lô, bạn in tem kèm hạn sử dụng. Máy in tem thường dùng giấy decal cuộn, khác giấy in hóa đơn, nên hỏi kỹ khổ tem khi mua giấy.</p>
+<p>Tiệm tạp hóa và cửa hàng bán lẻ xem thêm <a href="/nganh/phan-mem-quan-ly-tap-hoa">phần mềm quản lý tạp hóa</a> để biết cách theo dõi lô và hạn sử dụng.</p>
+<h2>Xuất hóa đơn PDF</h2>
+<p>Không có máy in, hoặc khách muốn nhận hóa đơn qua tin nhắn? Mở đơn và xuất PDF, rồi gửi qua ứng dụng nhắn tin bạn đang dùng. Cách này cũng tiện cho đơn giao hàng hoặc đơn đặt trước.</p>
+<h2>Máy in không chạy: kiểm tra theo thứ tự</h2>
+<ol>
+<li><strong>Máy in có bật và có giấy không?</strong> Nhiều máy chỉ nháy đèn khi hết giấy.</li>
+<li><strong>Giấy lắp đúng mặt chưa?</strong> Giấy in nhiệt chỉ in được một mặt. Lắp ngược sẽ ra tờ trắng.</li>
+<li><strong>Bluetooth:</strong> điện thoại có đang kết nối với một máy in khác không? Tắt Bluetooth rồi bật lại, chọn lại máy in trong SoDi.</li>
+<li><strong>LAN:</strong> điện thoại và máy in có cùng mạng Wifi không? Địa chỉ IP của máy in có thay đổi không?</li>
+<li><strong>Tắt máy in khoảng 10 giây rồi bật lại</strong>, sau đó in thử.</li>
+<li>Vẫn không được: gửi tên, đời máy in và mô tả lỗi tới <a href="mailto:support@sodientu.com">support@sodientu.com</a>.</li>
+</ol>
+<h2>Giữ máy in bền</h2>
+<ul>
+<li>Dùng giấy in nhiệt đúng khổ, tránh giấy quá mỏng dễ kẹt.</li>
+<li>Không để máy in sát bếp nóng hoặc chỗ dính nước.</li>
+<li>Lau đầu in nhẹ bằng bông và cồn khi chữ in bắt đầu mờ.</li>
+<li>Để sẵn vài cuộn giấy dự phòng, nhất là trước dịp lễ.</li>
+</ul>
+<p>Cài đặt máy in xong, bước tiếp theo là <a href="/huong-dan/quan-ly-kho-hang">quản lý kho hàng</a> để mỗi đơn in ra cũng tự trừ tồn kho.</p>
+
+                </div>
+                <section class="article-faq" aria-labelledby="faq-title">
+                    <h2 id="faq-title">Câu hỏi thường gặp</h2>
+                    <details class="qa">
+                        <summary>Không có máy in thì có dùng SoDi được không?</summary>
+                        <p>Được. Bạn vẫn bán hàng, thu tiền và xem báo cáo bình thường. Khi khách cần hóa đơn, xuất PDF để gửi qua tin nhắn.</p>
+                    </details>
+                    <details class="qa">
+                        <summary>Nên chọn máy in Bluetooth hay máy in mạng LAN?</summary>
+                        <p>Máy in Bluetooth hợp với quầy nhỏ, đặt gần điện thoại. Máy in mạng LAN hợp với bếp hoặc khi nhiều máy cùng in ra một máy in.</p>
+                    </details>
+                    <details class="qa">
+                        <summary>Một cửa hàng dùng được mấy máy in?</summary>
+                        <p>Bạn có thể dùng máy in hóa đơn ở quầy và máy in phiếu bếp riêng. Hãy thử với đúng loại máy in của bạn trước khi mua thêm.</p>
+                    </details>
+                </section>
+                <section class="related" aria-labelledby="related-title">
+                    <h2 id="related-title" class="related-title">Bài liên quan</h2>
+                    <ul class="post-grid">
+                    <li class="post-card">
+                        <a href="/huong-dan/tao-don-ban-hang">
+                            <span class="post-card-kicker">Hướng dẫn</span>
+                            <h3 class="post-card-title">Cách tạo đơn bán hàng nhanh trên điện thoại</h3>
+                            <p>Hướng dẫn tạo đơn bán hàng trên điện thoại bằng SoDi: chọn loại đơn, chọn bàn, chọn món theo size, quét mã vạch, giảm giá, thu tiền và in hóa đơn.</p>
+                            <span class="post-card-more">Đọc tiếp</span>
+                        </a>
+                    </li>
+                    <li class="post-card">
+                        <a href="/nganh/phan-mem-quan-ly-quan-an">
+                            <span class="post-card-kicker">Ngành hàng</span>
+                            <h3 class="post-card-title">Phần mềm quản lý quán ăn, quán cơm trên điện thoại</h3>
+                            <p>Phần mềm quản lý quán ăn SoDi: quản lý bàn và khu vực, in phiếu bếp, đơn mang đi và app giao đồ ăn, thu tiền QR, báo cáo lãi theo món ngay trên điện thoại.</p>
+                            <span class="post-card-more">Đọc tiếp</span>
+                        </a>
+                    </li>
+                    <li class="post-card">
+                        <a href="/huong-dan/quan-ly-kho-hang">
+                            <span class="post-card-kicker">Hướng dẫn</span>
+                            <h3 class="post-card-title">Nhập kho, xuất kho, kiểm kho và theo dõi tồn kho</h3>
+                            <p>Hướng dẫn quản lý kho hàng bằng SoDi: phiếu nhập kho, nhà cung cấp, xuất kho, kiểm kho, theo dõi tồn và giá trị tồn, lô hàng và hạn sử dụng trên điện thoại.</p>
+                            <span class="post-card-more">Đọc tiếp</span>
+                        </a>
+                    </li>
+                    </ul>
+                </section>
+            </div>
+        </article>
+
+        <section class="closing" id="tai-ung-dung">
+            <div class="wrap closing-inner">
+                <h2 class="closing-title">Sẵn sàng quản lý cửa hàng gọn hơn?</h2>
+                <p class="closing-lead">Tải SoDi ngay hôm nay. Miễn phí để bắt đầu, không cần thẻ thanh toán.</p>
+                <div class="store-row store-row-center">
+                <a class="store-link" href="https://apps.apple.com/us/app/sodi-qu%E1%BA%A3n-l%C3%BD-b%C3%A1n-h%C3%A0ng/id6474116712" target="_blank" rel="noopener" aria-label="Tải SoDi trên App Store">
+                    <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Tải trên App Store" width="162" height="54" loading="lazy">
+                </a>
+                <a class="store-link" href="https://play.google.com/store/apps/details?id=com.buffchalo.sales_management" target="_blank" rel="noopener" aria-label="Tải SoDi trên Google Play">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Tải trên Google Play" width="182" height="54" loading="lazy">
+                </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="wrap footer-grid">
+            <div class="footer-brand">
+                <a class="brand" href="/" aria-label="Sodi - trang chủ">
+                    <img src="/assets/images/logo/logo.png" alt="" width="32" height="32" class="brand-logo" loading="lazy">
+                    <span class="brand-name">Sodi</span>
+                </a>
+                <p>Phần mềm quản lý bán hàng, kho hàng và hóa đơn trên điện thoại cho chủ shop và quán cafe.</p>
+            </div>
+            <div class="footer-col">
+                <h2 class="footer-h">Sản phẩm</h2>
+                <a href="/#tinh-nang">Tính năng</a>
+                <a href="/#hoi-dap">Hỏi đáp</a>
+                <a href="/huong-dan">Hướng dẫn</a>
+                <a href="/kien-thuc">Kiến thức</a>
+            </div>
+            <div class="footer-col">
+                <h2 class="footer-h">Ngành hàng</h2>
+                <a href="/nganh/phan-mem-quan-ly-quan-cafe">Quán cafe, trà sữa</a>
+                <a href="/nganh/phan-mem-quan-ly-quan-an">Quán ăn</a>
+                <a href="/nganh/phan-mem-quan-ly-tap-hoa">Tạp hóa</a>
+                <a href="/nganh/phan-mem-quan-ly-cho-thue">Cho thuê</a>
+            </div>
+            <div class="footer-col">
+                <h2 class="footer-h">Tải ứng dụng</h2>
+                <a href="https://apps.apple.com/us/app/sodi-qu%E1%BA%A3n-l%C3%BD-b%C3%A1n-h%C3%A0ng/id6474116712" target="_blank" rel="noopener">App Store</a>
+                <a href="https://play.google.com/store/apps/details?id=com.buffchalo.sales_management" target="_blank" rel="noopener">Google Play</a>
+            </div>
+            <div class="footer-col">
+                <h2 class="footer-h">Liên hệ</h2>
+                <a href="mailto:support@sodientu.com">support@sodientu.com</a>
+                <a href="https://facebook.com/soquanlydientu" target="_blank" rel="noopener">Facebook</a>
+                <a href="https://youtube.com/@SoDiPos" target="_blank" rel="noopener">YouTube</a>
+            </div>
+        </div>
+        <div class="wrap footer-base">
+            <p>© <span id="year">2026</span> Sodi Quản lý bán hàng. <a href="/privacy-policy.html">Chính sách bảo mật</a> · <a href="/terms-of-service.html">Điều khoản</a></p>
+        </div>
+    </footer>
+
+    <script src="/assets/js/site.js?v=dfeb4e74" defer></script>
+</body>
+
+</html>

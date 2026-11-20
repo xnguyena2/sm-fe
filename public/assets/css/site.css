@@ -355,3 +355,7 @@ button { font: inherit; color: inherit; }
     .nav-link { padding: 12px 10px; }
 }
 #vi-sao-chon-sodi .stat dd { font-size: 22px; line-height: 1.25; }
+.latest-more { margin-top: 28px; text-align: center; }
+@media (min-width: 900px) { .latest .post-grid { grid-template-columns: repeat(3, 1fr); } }
+.prose li:has(> input[type="checkbox"]) { list-style: none; margin-left: -22px; }
+.prose li > input[type="checkbox"] { margin: 0 8px 0 0; accent-color: var(--green); }

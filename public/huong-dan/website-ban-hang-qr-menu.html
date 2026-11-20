@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tạo website bán hàng và mã QR menu | SoDi</title>
+    <meta name="description" content="Hướng dẫn tạo website bán hàng với SoDi: menu tự lấy từ app, in mã QR để khách xem menu và đặt món, nhận thông báo khi có đơn mới từ website trên điện thoại.">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0E7C66">
+    <link rel="canonical" href="https://sodientu.com/huong-dan/website-ban-hang-qr-menu">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://sodientu.com/huong-dan/website-ban-hang-qr-menu">
+    <meta property="og:title" content="Tạo website bán hàng và mã QR menu | SoDi">
+    <meta property="og:description" content="Hướng dẫn tạo website bán hàng với SoDi: menu tự lấy từ app, in mã QR để khách xem menu và đặt món, nhận thông báo khi có đơn mới từ website trên điện thoại.">
+    <meta property="og:image" content="https://sodientu.com/assets/images/hero/phone.png">
+    <meta property="og:locale" content="vi_VN">
+    <meta property="og:site_name" content="SoDi">
+    <meta property="article:published_time" content="2026-11-20">
+    <meta property="article:modified_time" content="2026-11-20">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Tạo website bán hàng và mã QR menu | SoDi">
+    <meta name="twitter:description" content="Hướng dẫn tạo website bán hàng với SoDi: menu tự lấy từ app, in mã QR để khách xem menu và đặt món, nhận thông báo khi có đơn mới từ website trên điện thoại.">
+    <meta name="twitter:image" content="https://sodientu.com/assets/images/hero/phone.png">
+
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+    <link rel="apple-touch-icon" href="/assets/images/logo/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/site.css?v=919a40c1">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Trang chủ",
+          "item": "https://sodientu.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Hướng dẫn",
+          "item": "https://sodientu.com/huong-dan"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Tạo website bán hàng và mã QR menu cho cửa hàng",
+          "item": "https://sodientu.com/huong-dan/website-ban-hang-qr-menu"
+        }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Tạo website bán hàng và mã QR menu cho cửa hàng",
+      "description": "Hướng dẫn tạo website bán hàng với SoDi: menu tự lấy từ app, in mã QR để khách xem menu và đặt món, nhận thông báo khi có đơn mới từ website trên điện thoại.",
+      "image": [
+        "https://sodientu.com/assets/images/hero/phone.png"
+      ],
+      "datePublished": "2026-11-20",
+      "dateModified": "2026-11-20",
+      "inLanguage": "vi",
+      "mainEntityOfPage": "https://sodientu.com/huong-dan/website-ban-hang-qr-menu",
+      "author": {
+        "@type": "Organization",
+        "name": "SoDi",
+        "url": "https://sodientu.com/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "SoDi",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://sodientu.com/assets/images/logo/logo.png"
+        }
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Có cần biết làm web không?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Không. Menu trên website lấy từ danh sách món trong app. Bạn sửa món, giá trong app là website cập nhật theo."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Khách đặt trên website thì tôi biết bằng cách nào?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SoDi gửi thông báo đơn mới về app. Đơn nằm trong danh sách đơn như đơn tạo tại quầy."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Mã QR dán ở bàn có cần in lại khi đổi menu không?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Không. Mã QR trỏ tới đường dẫn cửa hàng, menu thay đổi thì khách quét vẫn thấy menu mới."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16666143438"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'AW-16666143438');
+    </script>
+</head>
+<body>
+    <a class="skip-link" href="#noi-dung">Bỏ qua điều hướng</a>
+
+    <header class="header" id="header">
+        <div class="wrap header-bar">
+            <a class="brand" href="/" aria-label="Sodi - trang chủ">
+                <img src="/assets/images/logo/logo.png" alt="" width="36" height="36" class="brand-logo">
+                <span class="brand-name">Sodi</span>
+            </a>
+
+            <nav class="nav" id="nav" aria-label="Điều hướng chính">
+                <a class="nav-link" href="/#tinh-nang">Tính năng</a>
+                <a class="nav-link" href="/#nganh-hang">Ngành hàng</a>
+                <a class="nav-link" href="/huong-dan" aria-current="page">Hướng dẫn</a>
+                <a class="nav-link" href="/kien-thuc">Kiến thức</a>
+                <a class="nav-link" href="/#hoi-dap">Hỏi đáp</a>
+                <a class="btn btn-primary btn-sm nav-cta" href="#tai-ung-dung">Tải ứng dụng</a>
+            </nav>
+
+            <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="nav"
+                aria-label="Mở menu">
+                <span class="menu-bars" aria-hidden="true"></span>
+            </button>
+        </div>
+    </header>
+
+    <main id="noi-dung">
+        <article class="article">
+            <div class="wrap article-wrap">
+                <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Trang chủ</a></li><li><a href="/huong-dan">Hướng dẫn</a></li><li aria-current="page">Tạo website bán hàng và mã QR menu cho cửa hàng</li></ol></nav>
+                <header class="article-head">
+                    <p class="eyebrow">Hướng dẫn sử dụng</p>
+                    <h1 class="article-title">Tạo website bán hàng và mã QR menu cho cửa hàng</h1>
+                    <p class="article-lead">Website bán hàng riêng với menu lấy thẳng từ app. In mã QR dán ở bàn hoặc đăng lên Facebook, đơn mới báo về điện thoại.</p>
+                    <p class="article-meta">Cập nhật <time datetime="2026-11-20">20/11/2026</time> · SoDi</p>
+                </header>
+                <div class="prose">
+<!-- TODO: kiểm tra trong app: tên chức năng website, dạng đường dẫn website cửa hàng, cách bật/tắt nhận đơn online -->
+
+<p>Khách ngày càng quen với việc quét mã QR để xem menu và đặt món. Với SoDi, bạn có <strong>website bán hàng riêng</strong> cho cửa hàng mà không cần thuê làm web: menu tự lấy từ app, có mã QR để khách quét, và đơn mới báo về điện thoại.</p>
+<h2>Website bán hàng của SoDi làm được gì</h2>
+<ul>
+<li><strong>Menu tự lấy từ app:</strong> món, giá, hình ảnh, danh mục giống trong app.</li>
+<li><strong>Mã QR link cửa hàng:</strong> in ra dán ở bàn, quầy, cửa kính, tờ rơi.</li>
+<li><strong>Khách đặt đơn online:</strong> khách chọn món trên website.</li>
+<li><strong>Thông báo đơn mới:</strong> đơn từ website báo về app SoDi.</li>
+</ul>
+<h2>Bước 1: Chuẩn bị menu trong app</h2>
+<p>Website đẹp hay không phụ thuộc vào menu trong app:</p>
+<ol>
+<li><strong>Tên món rõ ràng.</strong> &quot;Trà đào cam sả&quot; tốt hơn &quot;TĐCS&quot;.</li>
+<li><strong>Thêm ảnh</strong> cho các món bán chạy. Ảnh chụp thật, đủ sáng, nền gọn.</li>
+<li><strong>Chia danh mục hợp lý:</strong> Cà phê, Trà, Đá xay, Bánh… Không quá nhiều danh mục.</li>
+<li><strong>Kiểm tra giá</strong> và size cho từng món.</li>
+</ol>
+<p>Xem cách quản lý món trong bài <a href="/huong-dan/bat-dau-voi-sodi">bắt đầu với SoDi</a>.</p>
+<h2>Bước 2: Bật website bán hàng</h2>
+<p>Vào phần website bán hàng trong SoDi, bật website cho cửa hàng. SoDi tạo đường dẫn riêng cho cửa hàng của bạn. Mở đường dẫn trên điện thoại để xem thử giống như khách sẽ thấy.</p>
+<!-- TODO: ảnh màn hình bật website bán hàng -->
+
+<h2>Bước 3: Lấy mã QR và in ra</h2>
+<p>Lấy mã QR link cửa hàng trong app và in ra. Gợi ý chỗ dán:</p>
+<ul>
+<li>Trên mỗi bàn (quán cafe, quán ăn).</li>
+<li>Ở quầy order để khách xem menu khi chờ.</li>
+<li>Cửa kính, để người đi ngang quét xem menu.</li>
+<li>Túi giao hàng, ly mang đi, tờ rơi.</li>
+</ul>
+<p>Mẹo in: in khổ đủ lớn (cạnh tối thiểu khoảng 3–4 cm), thêm dòng chữ &quot;Quét để xem menu và đặt món&quot;, và thử quét bằng vài điện thoại khác nhau trước khi in nhiều.</p>
+<aside class="cta-box" aria-label="Tải ứng dụng SoDi">
+                    <p class="cta-box-title">Thử SoDi cho cửa hàng của bạn</p>
+                    <p class="cta-box-text">Miễn phí để bắt đầu. Cài trên điện thoại và tạo đơn đầu tiên trong vài phút.</p>
+                    <div class="store-row">
+                <a class="store-link" href="https://apps.apple.com/us/app/sodi-qu%E1%BA%A3n-l%C3%BD-b%C3%A1n-h%C3%A0ng/id6474116712" target="_blank" rel="noopener" aria-label="Tải SoDi trên App Store">
+                    <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Tải trên App Store" width="162" height="54" loading="lazy">
+                </a>
+                <a class="store-link" href="https://play.google.com/store/apps/details?id=com.buffchalo.sales_management" target="_blank" rel="noopener" aria-label="Tải SoDi trên Google Play">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Tải trên Google Play" width="182" height="54" loading="lazy">
+                </a>
+                    </div>
+                </aside>
+
+<h2>Bước 4: Nhận đơn từ website</h2>
+<p>Khi khách đặt, SoDi gửi <strong>thông báo đơn mới</strong> về app. Đơn hiện trong danh sách đơn, bạn xử lý như đơn bình thường: in phiếu bếp, thu tiền, giao hàng. Xem <a href="/huong-dan/tao-don-ban-hang">tạo đơn bán hàng</a> và <a href="/huong-dan/ket-noi-may-in-hoa-don">kết nối máy in</a>.</p>
+<p>Hãy để máy nhận thông báo bật âm lượng, nhất là giờ cao điểm, để không bỏ sót đơn.</p>
+<h2>Bước 5: Chia sẻ đường dẫn</h2>
+<p>Ngoài mã QR, dán đường dẫn website vào:</p>
+<ul>
+<li>Phần giới thiệu trang Facebook của quán.</li>
+<li>Tin nhắn chào khách trên Zalo, Messenger.</li>
+<li>Bài đăng giới thiệu món mới.</li>
+</ul>
+<p>Khách quen nhắn tin đặt món có thể được gửi đường dẫn để tự chọn, đỡ nhầm món.</p>
+<h2>Ý tưởng dùng website và QR menu</h2>
+<ul>
+<li><strong>Quán cafe:</strong> QR trên bàn để khách gọi thêm món mà không cần ra quầy. Xem <a href="/nganh/phan-mem-quan-ly-quan-cafe">phần mềm quản lý quán cafe</a>.</li>
+<li><strong>Quán ăn:</strong> khách văn phòng đặt cơm trưa trước giờ nghỉ. Xem <a href="/nganh/phan-mem-quan-ly-quan-an">phần mềm quản lý quán ăn</a>.</li>
+<li><strong>Tạp hóa:</strong> khách trong xóm đặt hàng, tiệm soạn sẵn. Xem <a href="/nganh/phan-mem-quan-ly-tap-hoa">phần mềm quản lý tạp hóa</a>.</li>
+<li><strong>Giờ vắng khách:</strong> đăng món khuyến mãi kèm đường dẫn. Bài <a href="/kien-thuc/tang-doanh-thu-gio-thap-diem">tăng doanh thu giờ thấp điểm</a> có thêm gợi ý.</li>
+</ul>
+<h2>Viết tên và mô tả món cho khách online</h2>
+<p>Khách online không hỏi được nhân viên, nên tên món cần tự giải thích. Ghi rõ thành phần chính, vị (ngọt, ít ngọt, cay), và size nếu có. Ví dụ &quot;Trà đào cam sả – trà đen, đào miếng, cam tươi, sả&quot; dễ chọn hơn &quot;Trà đào đặc biệt&quot;. Ảnh chụp thật của món giúp khách quyết định nhanh hơn.</p>
+<h2>Lưu ý</h2>
+<ul>
+<li>Món hết hàng: cập nhật trong app để khách không đặt nhầm.</li>
+<li>Giá trên website lấy từ app, nên đổi giá ở app trước khi đăng khuyến mãi.</li>
+<li>Kiểm tra website trên điện thoại mỗi khi thêm nhiều món mới.</li>
+</ul>
+
+                </div>
+                <section class="article-faq" aria-labelledby="faq-title">
+                    <h2 id="faq-title">Câu hỏi thường gặp</h2>
+                    <details class="qa">
+                        <summary>Có cần biết làm web không?</summary>
+                        <p>Không. Menu trên website lấy từ danh sách món trong app. Bạn sửa món, giá trong app là website cập nhật theo.</p>
+                    </details>
+                    <details class="qa">
+                        <summary>Khách đặt trên website thì tôi biết bằng cách nào?</summary>
+                        <p>SoDi gửi thông báo đơn mới về app. Đơn nằm trong danh sách đơn như đơn tạo tại quầy.</p>
+                    </details>
+                    <details class="qa">
+                        <summary>Mã QR dán ở bàn có cần in lại khi đổi menu không?</summary>
+                        <p>Không. Mã QR trỏ tới đường dẫn cửa hàng, menu thay đổi thì khách quét vẫn thấy menu mới.</p>
+                    </details>
+                </section>
+                <section class="related" aria-labelledby="related-title">
+                    <h2 id="related-title" class="related-title">Bài liên quan</h2>
+                    <ul class="post-grid">
+                    <li class="post-card">
+                        <a href="/huong-dan/tao-don-ban-hang">
+                            <span class="post-card-kicker">Hướng dẫn</span>
+                            <h3 class="post-card-title">Cách tạo đơn bán hàng nhanh trên điện thoại</h3>
+                            <p>Hướng dẫn tạo đơn bán hàng trên điện thoại bằng SoDi: chọn loại đơn, chọn bàn, chọn món theo size, quét mã vạch, giảm giá, thu tiền và in hóa đơn.</p>
+                            <span class="post-card-more">Đọc tiếp</span>
+                        </a>
+                    </li>
+                    <li class="post-card">
+                        <a href="/nganh/phan-mem-quan-ly-quan-cafe">
+                            <span class="post-card-kicker">Ngành hàng</span>
+                            <h3 class="post-card-title">Phần mềm quản lý quán cafe trên điện thoại</h3>
+                            <p>Phần mềm quản lý quán cafe SoDi giúp tạo đơn theo size, quản lý bàn, nhận chuyển khoản QR tự xác nhận, tính giá vốn từng ly và chốt ca khớp tiền két.</p>
+                            <span class="post-card-more">Đọc tiếp</span>
+                        </a>
+                    </li>
+                    <li class="post-card">
+                        <a href="/kien-thuc/tang-doanh-thu-gio-thap-diem">
+                            <span class="post-card-kicker">Kiến thức</span>
+                            <h3 class="post-card-title">Tăng doanh thu quán vào giờ thấp điểm</h3>
+                            <p>Cách tăng doanh thu quán cafe, quán ăn giờ vắng khách: tìm giờ thấp điểm bằng số liệu, khuyến mãi theo giờ, combo, bán online, đặt trước và đo hiệu quả.</p>
+                            <span class="post-card-more">Đọc tiếp</span>
+                        </a>
+                    </li>
+                    </ul>
+                </section>
+            </div>
+        </article>
+
+        <section class="closing" id="tai-ung-dung">
+            <div class="wrap closing-inner">
+                <h2 class="closing-title">Sẵn sàng quản lý cửa hàng gọn hơn?</h2>
+                <p class="closing-lead">Tải SoDi ngay hôm nay. Miễn phí để bắt đầu, không cần thẻ thanh toán.</p>
+                <div class="store-row store-row-center">
+                <a class="store-link" href="https://apps.apple.com/us/app/sodi-qu%E1%BA%A3n-l%C3%BD-b%C3%A1n-h%C3%A0ng/id6474116712" target="_blank" rel="noopener" aria-label="Tải SoDi trên App Store">
+                    <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Tải trên App Store" width="162" height="54" loading="lazy">
+                </a>
+                <a class="store-link" href="https://play.google.com/store/apps/details?id=com.buffchalo.sales_management" target="_blank" rel="noopener" aria-label="Tải SoDi trên Google Play">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Tải trên Google Play" width="182" height="54" loading="lazy">
+                </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="wrap footer-grid">
+            <div class="footer-brand">
+                <a class="brand" href="/" aria-label="Sodi - trang chủ">
+                    <img src="/assets/images/logo/logo.png" alt="" width="32" height="32" class="brand-logo" loading="lazy">
+                    <span class="brand-name">Sodi</span>
+                </a>
+                <p>Phần mềm quản lý bán hàng, kho hàng và hóa đơn trên điện thoại cho chủ shop và quán cafe.</p>
+            </div>
+            <div class="footer-col">
+                <h2 class="footer-h">Sản phẩm</h2>
+                <a href="/#tinh-nang">Tính năng</a>
+                <a href="/#hoi-dap">Hỏi đáp</a>
+                <a href="/huong-dan">Hướng dẫn</a>
+                <a href="/kien-thuc">Kiến thức</a>
+            </div>
+            <div class="footer-col">
+                <h2 class="footer-h">Ngành hàng</h2>
+                <a href="/nganh/phan-mem-quan-ly-quan-cafe">Quán cafe, trà sữa</a>
+                <a href="/nganh/phan-mem-quan-ly-quan-an">Quán ăn</a>
+                <a href="/nganh/phan-mem-quan-ly-tap-hoa">Tạp hóa</a>
+                <a href="/nganh/phan-mem-quan-ly-cho-thue">Cho thuê</a>
+            </div>
+            <div class="footer-col">
+                <h2 class="footer-h">Tải ứng dụng</h2>
+                <a href="https://apps.apple.com/us/app/sodi-qu%E1%BA%A3n-l%C3%BD-b%C3%A1n-h%C3%A0ng/id6474116712" target="_blank" rel="noopener">App Store</a>
+                <a href="https://play.google.com/store/apps/details?id=com.buffchalo.sales_management" target="_blank" rel="noopener">Google Play</a>
+            </div>
+            <div class="footer-col">
+                <h2 class="footer-h">Liên hệ</h2>
+                <a href="mailto:support@sodientu.com">support@sodientu.com</a>
+                <a href="https://facebook.com/soquanlydientu" target="_blank" rel="noopener">Facebook</a>
+                <a href="https://youtube.com/@SoDiPos" target="_blank" rel="noopener">YouTube</a>
+            </div>
+        </div>
+        <div class="wrap footer-base">
+            <p>© <span id="year">2026</span> Sodi Quản lý bán hàng. <a href="/privacy-policy.html">Chính sách bảo mật</a> · <a href="/terms-of-service.html">Điều khoản</a></p>
+        </div>
+    </footer>
+
+    <script src="/assets/js/site.js?v=dfeb4e74" defer></script>
+</body>
+
+</html>
