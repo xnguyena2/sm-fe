@@ -335,6 +335,8 @@ for (const [collection, cfg] of Object.entries(COLLECTIONS)) {
       imageAlt: data.imageAlt || '',
       faq: data.faq || [],
       order: data.order ?? 999,
+      // Tie-breaker for posts published on the same day: newer file first.
+      created: fs.statSync(path.join(dir, name)).birthtimeMs,
       path: `/${collection}/${data.slug}`,
       url: `${SITE}/${collection}/${data.slug}`,
     });
@@ -501,7 +503,7 @@ for (const [collection, cfg] of Object.entries(COLLECTIONS)) {
   const items = pages.filter((p) => p.collection === collection).sort((a, b) =>
     collection === 'huong-dan'
       ? a.order - b.order || a.title.localeCompare(b.title, 'vi')
-      : b.datePublished.localeCompare(a.datePublished) || a.title.localeCompare(b.title, 'vi'));
+      : b.datePublished.localeCompare(a.datePublished) || b.created - a.created);
   const url = `${SITE}/${collection}`;
   const crumbs = [{ name: 'Trang chủ', path: '/' }, { name: cfg.label, path: `/${collection}` }];
   const titleTag = `${cfg.listSeoTitle} | SoDi`;
@@ -591,7 +593,7 @@ ${closing()}    </main>
     warnings.push('public/index.html: không thấy cặp comment latest-posts, bỏ qua khối "Bài viết mới"');
   } else {
     const latest = pages.filter((p) => p.collection === 'kien-thuc')
-      .sort((x, y) => y.datePublished.localeCompare(x.datePublished) || y.dateModified.localeCompare(x.dateModified) || x.title.localeCompare(y.title, 'vi'))
+      .sort((x, y) => y.datePublished.localeCompare(x.datePublished) || y.created - x.created)
       .slice(0, 3);
     const block = latest.length ? `
         <section class="section section-tint latest" aria-labelledby="bai-viet-moi">
